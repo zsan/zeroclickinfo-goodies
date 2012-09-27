@@ -280,7 +280,7 @@ my %data = (
 );
 
 #Matches +1 234 or +1-234 or +1 (234) or +1(234) or +1234
-triggers query_lc => qr/\(?\+[0-9]+((\s*|\-*)\(?[0-9]+\)?)*\)?/;
+triggers query_lc => qr/^\(?\+[0-9]+((\s*|\-*)\(?[0-9]+\)?)*\)?$/;
 
 zci is_cached => 1;
 
@@ -294,7 +294,6 @@ handle query_nowhitespace_nodash => sub {
                 push @countries, $country;
             }   
         }
-        
     }
     if(@countries > 0) {
         return "Countries with that area code: " . join(", ", @countries);
