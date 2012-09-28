@@ -3,7 +3,7 @@ package DDG::Goodie::WebCompatibility;
 use DDG::Goodie;
 use JSON::XS;
 
-triggers any => "use";
+triggers any => "use", "support", "supports";
 
 zci is_cached => 1;
 
@@ -12,11 +12,16 @@ my $json = JSON::XS->new->allow_nonref->decode(<<'END'
 END
 );
 
+my $browsers = '(?:firefox|ff||opera|chrome|ie|internet explorer)';
+
 handle query_raw => sub {
     my $data = $json->{data};
-    return unless s/(?:when )?can (i|you)? ?use //i;
-    return unless exists $data->{$_};
-    return $data->{$_}{description};
+    return unless s/(?: (?:when\ )?can\ i\ use
+                        |what\ browser'?s?\ (?:can\ use|supports?)
+                        |does\ $browsers\ support
+                    )?\ (.*)//ix;
+    return unless exists $data->{$1};
+    return $data->{$1}{description};
 };
 
 1;
