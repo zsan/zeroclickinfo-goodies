@@ -1,4 +1,4 @@
-package DDG::Goodie::CountryCodes;
+package DDG::Goodie::ReverseCountryCodes;
 # ABSTRACT: Displays country based on the area code. 
 
 use DDG::Goodie;
@@ -279,30 +279,34 @@ my %data = (
     "Zimbabwe" => ["+263"],
 );
 
-#Matches +1 234 or +1-234 or +1 (234) or +1(234) or +1234
-triggers query_lc => qr/^\(?\+[0-9]+((\s*|\-*)\(?[0-9]+\)?)*\)?$/;
+triggers any => "country code", "country code of";
 
 zci is_cached => 1;
 
-handle query_nowhitespace_nodash => sub {
-    #Remove parenthesis from the query. Important for numbers.
-    s/\(|\)//g;
+handle remainder => sub {
+    #Store numbers that matched the query.
+    my @numbers;
+    my $query = lc $_;
 
-    #Store countries that matched the query.
-    my @countries;
-
-    my $query = $_;
     while(my ($country, $number) = each %data) {
-        foreach (@$number) {
-            #Add the countries to the list.
-            if($_ eq $query) {
-                push @countries, $country;
-            }   
+        
+        #Remove parenthesis in the country.
+        $_ = $country;
+        s/\s*\(.+\)//g;
+
+        #Lowercase.
+        $_ = lc;
+
+        if($query eq $_) {
+            foreach (@$number) {
+                #Add the numbers to the list.
+                push @numbers, $_;
+            }
         }
     }
-    #Make sure @country is not empty.
-    if(@countries > 0) {
-        return "Countries with that calling code: " . join(", ", @countries);
+    #Make sure @numbers is not empty.
+    if(@numbers > 0) {
+        return "Numbers from that country / service: " . join(", ", @numbers);
     }
     return;
 };
