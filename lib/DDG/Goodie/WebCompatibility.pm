@@ -2,6 +2,7 @@ package DDG::Goodie::WebCompatibility;
 
 use DDG::Goodie;
 use JSON::XS;
+use HTML::Table;
 
 zci is_cached => 1;
 
@@ -21,7 +22,27 @@ handle query_raw => sub {
                         |does\ $browsers\ support
                     )?\ (.*)//ix;
     return unless exists $data->{$1};
-    return $data->{$1}{description};
+    my $feature = $data->{$1};
+    my $info = "$feature->{title}: $feature->{description} ($feature->{notes})";
+    my $table = new HTML::Table(
+        -data => [[''], ['current'], ['-1'], ['-2'], ['-3'], ['-4'], ['-5']]
+    );
+    map {
+      my $browser = $_;
+      /and_(chr|ff)|bb/ ? $table->addCol($browser, 'y') :
+        $table->addCol(($browser, map {
+         #"$feature->{stats}{$browser}{$_} (v$_)"
+         "$feature->{stats}{$browser}{$_}"
+        } reverse keys $feature->{stats}{$browser}));
+    } keys $feature->{stats};
+    $table->setRowHead(1);
+    $table->setColHead(1);
+    my $css = ' <style type="text/css">
+                table { margin: 4px 0px 0px 20px; }
+                th, td { padding-right: 10px; }
+                th { color: 666666; font-size: 12px; font-weight: 700; }
+                </style>';
+    return "$css$info<br><br>$table";
 };
 
 1;
