@@ -12,7 +12,7 @@ my $json = JSON::XS->new->allow_nonref->decode(<<'END'
 END
 );
 
-my $browsers = '(?:firefox|ff||opera|chrome|ie|internet explorer)';
+my $browsers = join '|', keys $json->{agents};
 
 handle query_raw => sub {
     my $data = $json->{data};
