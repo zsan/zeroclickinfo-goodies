@@ -40,7 +40,7 @@ handle query_raw => sub {
      ($support eq 'n' ? '' :
         "$json->{agents}{$_}{browser} (v$minimumCompatibleVersion+)");
     } grep {ref $feature->{stats}{$_} eq 'HASH'} keys %{$feature->{stats}};
-    $compatibility =~ s/(.*), (.*)/$1 and $2/;
+    for ($compatibility) {s/ , / /g; s/, ,//g; s/(.*), (.*)/$1 and $2/}
     my $text = (my $html = "$info\n\n$compatibility") =~ s/\n/<br>/g;
     return $text, html => $html;
 };
