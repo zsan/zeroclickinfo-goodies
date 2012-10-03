@@ -24,7 +24,7 @@ handle query_raw => sub {
     my $feature = $data->{$1};
     my $info = "$feature->{title}: $feature->{description}";
     $info .= "($feature->{notes})" if $feature->{notes} ne '';
-    my $compatibility = 'Works in: ';
+    my $compatibility = '<i>Works in: </i>';
     $compatibility .= join ', ', map {
       my $browser = $_;
       my $version_iterator = 0;
@@ -41,7 +41,7 @@ handle query_raw => sub {
      ($support eq 'n' ? '' :
         "$json->{agents}{$_}{browser} (v$minimumCompatibleVersion+)");
     } grep {ref $feature->{stats}{$_} eq 'HASH'} keys %{$feature->{stats}};
-    for ($compatibility) {s/ , / /g; s/, ,//g; s/(.*), (.*)/$1 and $2/}
+    for ($compatibility) {s/>, /> /g; s/, ,//g; s/(.*), (.*)/$1 and $2/}
     my $links = (scalar @{$feature->{links}} > 0 ? '<ul>'
                   . (join '', map {
                         "<li><a href=\"$_->{url}\">$_->{title}</a></li>"
@@ -49,10 +49,12 @@ handle query_raw => sub {
                   . '</ul>' : '');
     my $attribution = 'More at';
     my $url = 'http://caniuse.com';
-    my $text = (my $html = "$info\n$compatibility") =~ s/\n/<br>/g;
+    my $text = my $html = "$info\n$compatibility";
+    $html =~ s/\n/<br>/g;
+    $text =~ s:</?i>::g;
     return "$text\n$attribution $url",
-            html => $html . "<br>$links<br><a class=\"zero_click_more_at_link\" "
-                    . "href=\"$url\">caniuse.com</a>";
+            html => $html . "<br>$links<a class=\"zero_click_more_at_link\" "
+                    . "href=\"$url\">$attribution caniuse.com</a>";
 };
 
 1;
