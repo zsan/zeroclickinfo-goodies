@@ -10,9 +10,9 @@ my $json = JSON::XS->new->allow_nonref->decode(<<'END'
 END
 );
 
-triggers any => keys $json->{data};
+triggers any => keys %{$json->{data}};
 
-my $browsers = join '|', keys $json->{agents};
+my $browsers = join '|', keys %{$json->{agents}};
 
 handle query_raw => sub {
     my $data = $json->{data};
@@ -25,17 +25,16 @@ handle query_raw => sub {
     my $info = "$feature->{title}: $feature->{description} ($feature->{notes})";
     my $compatibility = '';
     map {
-      my $browser = $_;
       my $version_iterator = 0;
       my $minimumCompatibleVersion = '';
-      foreach (reverse sort keys $feature->{stats}{$_}) {
+      foreach (reverse sort keys %{$feature->{stats}{$_}}) {
         $minimumCompatibleVersion = $_;
         if (!/n/) { last; }
         $version_iterator--;
       }
       $compatibility .= "\nSupported in $json->{agents}{$_}{browser}"
                       . " since version $minimumCompatibleVersion";
-    } keys $feature->{stats};
+    } grep {ref $feature->{stats}{$_} eq 'HASH'} keys %{$feature->{stats}};
     my $text = (my $html = "$info\n\n$compatibility") =~ s/\n/<br>/g;
     return $text, html => $html;
 };
