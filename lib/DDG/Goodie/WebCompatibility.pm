@@ -42,8 +42,14 @@ handle query_raw => sub {
         "$json->{agents}{$_}{browser} (v$minimumCompatibleVersion+)");
     } grep {ref $feature->{stats}{$_} eq 'HASH'} keys %{$feature->{stats}};
     for ($compatibility) {s/ , / /g; s/, ,//g; s/(.*), (.*)/$1 and $2/}
+    my $links = (scalar @{$feature->{links}} > 0 ? '<ul>'
+                  . (join '', map {
+                        '<li><a href="' . $_->{url} . '>' . $_->{title} . '</a></li>'
+                    } @{$feature->{links}})
+                  . '</ul>' : '');
+    
     my $text = (my $html = "$info\n\n$compatibility") =~ s/\n/<br>/g;
-    return $text, html => $html;
+    return $text, html => $html . "<br><br>$links";
 };
 
 1;
