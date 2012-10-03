@@ -2,7 +2,6 @@ package DDG::Goodie::WebCompatibility;
 
 use DDG::Goodie;
 use JSON::XS;
-use HTML::Table;
 
 zci is_cached => 1;
 
@@ -24,25 +23,21 @@ handle query_raw => sub {
     return unless exists $data->{$1};
     my $feature = $data->{$1};
     my $info = "$feature->{title}: $feature->{description} ($feature->{notes})";
-    my $table = new HTML::Table(
-        -data => [[''], ['current'], ['-1'], ['-2'], ['-3'], ['-4'], ['-5']]
-    );
+    my $compatibility = '';
     map {
       my $browser = $_;
-      /and_(chr|ff)|bb/ ? $table->addCol($browser, 'y') :
-        $table->addCol(($browser, map {
-         #"$feature->{stats}{$browser}{$_} (v$_)"
-         "$feature->{stats}{$browser}{$_}"
-        } reverse keys $feature->{stats}{$browser}));
+      my $version_iterator = 0;
+      my $minimumCompatibleVersion = '';
+      foreach (reverse sort keys $feature->{stats}{$_}) {
+        $minimumCompatibleVersion = $_;
+        if (!/n/) { last; }
+        $version_iterator--;
+      }
+      $compatibility .= "\nSupported in $json->{agents}{$_}{browser}"
+                      . " since version $minimumCompatibleVersion";
     } keys $feature->{stats};
-    $table->setRowHead(1);
-    $table->setColHead(1);
-    my $css = ' <style type="text/css">
-                table { margin: 4px 0px 0px 20px; }
-                th, td { padding-right: 10px; }
-                th { color: 666666; font-size: 12px; font-weight: 700; }
-                </style>';
-    return "$css$info<br><br>$table";
+    my $text = (my $html = "$info\n\n$compatibility") =~ s/\n/<br>/g;
+    return $text, html => $html;
 };
 
 1;
