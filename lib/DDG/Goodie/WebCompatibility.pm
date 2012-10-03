@@ -44,7 +44,7 @@ handle query_raw => sub {
     for ($compatibility) {s/ , / /g; s/, ,//g; s/(.*), (.*)/$1 and $2/}
     my $links = (scalar @{$feature->{links}} > 0 ? '<ul>'
                   . (join '', map {
-                        '<li><a href="' . $_->{url} . '>' . $_->{title} . '</a></li>'
+                        "<li><a href=\"$_->{url}\">$_->{title}</a></li>"
                     } @{$feature->{links}})
                   . '</ul>' : '');
     
