@@ -23,21 +23,24 @@ handle query_raw => sub {
     return unless exists $data->{$1};
     my $feature = $data->{$1};
     my $info = "$feature->{title}: $feature->{description} ($feature->{notes})";
-    my $compatibility = '';
-    map {
+    my $compatibility = 'Works in: ';
+    $compatibility .= join ', ', map {
+      my $browser = $_;
       my $version_iterator = 0;
       my $minimumCompatibleVersion = '';
       my $support = 'n';
-      foreach (reverse sort keys %{$feature->{stats}{$_}}) {
+      foreach (sort {
+            $a =~ s/-.*//; $b =~ s/-.*//;
+            $a <=> $b } keys %{$feature->{stats}{$browser}}) {
         $minimumCompatibleVersion = $_;
-        if (!/[n|u]/) { $support = $_; last; }
+        if (exists $feature->{stats}{$browser}{$_} and
+            $feature->{stats}{$browser}{$_} =~ /y/) { $support = $_; last; }
         $version_iterator--;
       }
-      $compatibility .= "\n" . ($support eq 'y' ? 'Supported' : 'Partially supported')
-                      . " in $json->{agents}{$_}{browser}"
-                      . " since version $minimumCompatibleVersion"
-                        unless $support eq 'n';
+     ($support eq 'n' ? '' :
+        "$json->{agents}{$_}{browser} (v$minimumCompatibleVersion+)");
     } grep {ref $feature->{stats}{$_} eq 'HASH'} keys %{$feature->{stats}};
+    $compatibility =~ s/(.*), (.*)/$1 and $2/;
     my $text = (my $html = "$info\n\n$compatibility") =~ s/\n/<br>/g;
     return $text, html => $html;
 };
