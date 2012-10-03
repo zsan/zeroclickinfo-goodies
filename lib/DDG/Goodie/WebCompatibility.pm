@@ -47,9 +47,12 @@ handle query_raw => sub {
                         "<li><a href=\"$_->{url}\">$_->{title}</a></li>"
                     } @{$feature->{links}})
                   . '</ul>' : '');
-    
-    my $text = (my $html = "$info\n\n$compatibility") =~ s/\n/<br>/g;
-    return $text, html => $html . "<br><br>$links";
+    my $attribution = 'More at';
+    my $url = 'http://caniuse.com';
+    my $text = (my $html = "$info\n$compatibility") =~ s/\n/<br>/g;
+    return "$text\n$attribution $url",
+            html => $html . "<br>links<br>$attribution "
+                    . "<a href=\"$url\">caniuse.com</a>";
 };
 
 1;
