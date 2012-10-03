@@ -22,7 +22,8 @@ handle query_raw => sub {
                     )?\ (.*)//ix;
     return unless exists $data->{$1};
     my $feature = $data->{$1};
-    my $info = "$feature->{title}: $feature->{description} ($feature->{notes})";
+    my $info = "$feature->{title}: $feature->{description}";
+    $info .= "($feature->{notes})" if $feature->{notes} ne '';
     my $compatibility = 'Works in: ';
     $compatibility .= join ', ', map {
       my $browser = $_;
