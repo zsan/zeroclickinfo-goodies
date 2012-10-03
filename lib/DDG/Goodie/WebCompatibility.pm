@@ -27,13 +27,16 @@ handle query_raw => sub {
     map {
       my $version_iterator = 0;
       my $minimumCompatibleVersion = '';
+      my $support = 'n';
       foreach (reverse sort keys %{$feature->{stats}{$_}}) {
         $minimumCompatibleVersion = $_;
-        if (!/n/) { last; }
+        if (!/[n|u]/) { $support = $_; last; }
         $version_iterator--;
       }
-      $compatibility .= "\nSupported in $json->{agents}{$_}{browser}"
-                      . " since version $minimumCompatibleVersion";
+      $compatibility .= "\n" . ($support eq 'y' ? 'Supported' : 'Partially supported')
+                      . " in $json->{agents}{$_}{browser}"
+                      . " since version $minimumCompatibleVersion"
+                        unless $support eq 'n';
     } grep {ref $feature->{stats}{$_} eq 'HASH'} keys %{$feature->{stats}};
     my $text = (my $html = "$info\n\n$compatibility") =~ s/\n/<br>/g;
     return $text, html => $html;
