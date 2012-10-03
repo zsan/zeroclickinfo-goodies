@@ -51,7 +51,7 @@ handle query_raw => sub {
     my $url = 'http://caniuse.com';
     my $text = (my $html = "$info\n$compatibility") =~ s/\n/<br>/g;
     return "$text\n$attribution $url",
-            html => $html . "<br>links<br>$attribution "
+            html => $html . "<br>$links<br>$attribution "
                     . "<a href=\"$url\">caniuse.com</a>";
 };
 
