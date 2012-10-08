@@ -18,7 +18,6 @@ triggers query_lc => qr/
 handle query_lc => sub {
     my $output;
     my $heading = "Phone Number Information ($_)";
-    binmode(STDOUT, ":utf8");
     if(my $iso_country_code = lc Number::Phone::Country::phone2country($_)) {
         #Get the country code.
         $iso_country_code = $iso_country_code eq 'uk' ? 'gb' : $iso_country_code;
