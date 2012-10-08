@@ -4,6 +4,9 @@ use DDG::Goodie;
 use Number::Phone;
 use Number::Phone::Country;
 use Locale::Country;
+use URI::Escape;
+use String::Interpolate;
+use utf8;
 
 zci is_cached => 1;
 
@@ -15,7 +18,7 @@ triggers query_lc => qr/
 handle query_lc => sub {
     my $output;
     my $heading = "Phone Number Information ($_)";
-
+    binmode(STDOUT, ":utf8");
     if(my $iso_country_code = lc Number::Phone::Country::phone2country($_)) {
         #Get the country code.
         $iso_country_code = $iso_country_code eq 'uk' ? 'gb' : $iso_country_code;
@@ -33,8 +36,10 @@ handle query_lc => sub {
 
             #Check if the area is available.
             if(defined $area) {
-                $area =~ s{\\}{}gi;
-                $output = qq(From: <a href='http://mapq.st/map?q=$area,$country'>$area, $country</a>);
+                $area = String::Interpolate::interpolate($area);
+                utf8::decode($area);
+                my $url = uri_escape_utf8("$area, $country");
+                $output = qq(From: <a href='http://mapq.st/map?q=$url'>$area, $country</a>);
             } else {
                 $output = qq(From: <a href='http://mapq.st/map?q=$country'>$country</a>);
             }
