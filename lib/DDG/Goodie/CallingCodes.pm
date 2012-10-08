@@ -15,7 +15,6 @@ triggers query_lc => qr/
 handle query_lc => sub {
     my $output;
     my $heading = "Phone Number Information ($_)";
-    my %other;
 
     if(my $iso_country_code = lc Number::Phone::Country::phone2country($_)) {
         #Get the country code.
@@ -40,60 +39,10 @@ handle query_lc => sub {
                 $output = qq(From: <a href='http://mapq.st/map?q=$country'>$country</a>);
             }
 
-            #Check if it is a mobile number.
-            if($phone_info->is_mobile()) {
-                $other{"mobile phone"} = 1; 
+            #Check country code.
+            if(my $country_code = $phone_info->country_code) {
+                $output .= qq(<br>Country code: +$country_code);
             }
-
-            #Check if it is a fixed line.
-            if($phone_info->is_fixed_line()) {
-                $other{"fixed line"} = 1; 
-            }
-
-            #Check if it is in use.
-            if($phone_info->is_in_use()) {
-                $other{"in use"} = 1;
-            }
-
-            #Check if it is VoIP.
-            if($phone_info->is_ipphone()) {
-                $other{"VoIP"} = 1;
-            }
-
-            #Check if it is toll-free.
-            if($phone_info->is_tollfree()) {
-                $other{"toll-free"} = 1;
-            }
-
-            #Check if it is adult.
-            if($phone_info->is_adult()) {
-                $other{"adult"} = 1;
-            }
-            
-            #Check if it is personal.
-            if($phone_info->is_personal()) {
-                $other{"personal"} = 1;
-            }
-
-            #Check if it is corporate.
-            if($phone_info->is_corporate()) {
-                $other{"corporate"} = 1;
-            }
-
-            #Check if it is government.
-            if($phone_info->is_government()) {
-                $other{"government"} = 1;
-            }
-            
-            #Loop through the hash.
-            my $elements = keys %other;
-            if($elements > 0) {
-                $output .= qq(<br>The );
-            }
-            while(my ($key, $value) = each %other) {
-                
-            }
-
         }
         return $output, heading => $heading, html => $output;
     }
