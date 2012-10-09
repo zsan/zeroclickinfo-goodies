@@ -10,7 +10,7 @@ use utf8;
 
 zci is_cached => 1;
 
-triggers query_lc => qr/^\+?\d+
+triggers query_lc => qr/^\+?\(?\d+\)?
                        ([\s\-\.]+\(?\d+\)?)*
                        $/x;
 
