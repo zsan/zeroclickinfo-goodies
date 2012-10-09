@@ -42,7 +42,7 @@ handle query => sub {
                 $output = qq(From: <a href='http://mapq.st/map?q=$country'>$country</a>);
             }
 
-            #Check country code.
+            #Get country code.
             if(my $country_code = $phone_info->country_code) {
                 $output .= qq(<br>Country code: +$country_code);
             }
