@@ -10,12 +10,11 @@ use utf8;
 
 zci is_cached => 1;
 
-triggers query_lc => qr/
-                     \(?\+?\d+\)? #The first set of numbers.
-                     ([\s\-\.]*\d+)* #The next set of numbers    
-                     /ix;
+triggers query_lc => qr/^\+?\d+
+                       ([\s\-\.]+\(?\d+\)?)*
+                       $/x;
 
-handle query_lc => sub {
+handle query => sub {
     my $output;
     my $heading = "Phone Number Information ($_)";
     if(my $iso_country_code = lc Number::Phone::Country::phone2country($_)) {
