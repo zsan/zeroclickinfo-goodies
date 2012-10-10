@@ -48,13 +48,12 @@ handle query => sub {
 
         #Get the map.
         my ($lat, $lon) = Locale::Country::Geo->geolocation($iso_country_code);
-        $output .= qq(<img src='/imq2/?size=550,150&zoom=4&center=$lat,$lon&size=400,200&imageType=jpg'>);
-
+        $output .= qq(<img src='/imq2/?size=550,150&zoom=4&center=$lat,$lon&size=400,200&imageType=jpg' style='max-width: 100% !important; height: auto !important;'>);
         #More
-        if(defined $phone_info) {
-            $output .= qq(More at <a href='http://mapq.st/map?q=$country'>MapQuest</a>);
-        } else {
+        if(defined $phone_info && $area) {
             $output .= qq(More at <a href='http://mapq.st/map?q=$area, $country'>MapQuest</a>);
+        } else {
+            $output .= qq(More at <a href='http://mapq.st/map?q=$country'>MapQuest</a>);
         }
 
         return $output, heading => $heading, html => $output;
