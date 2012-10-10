@@ -9,6 +9,7 @@ use String::Interpolate;
 use Geo::Coder::OSM;
 use utf8;
 use LWP::UserAgent;
+use Locale::Country::Geo;
 
 zci is_cached => 1;
 
@@ -17,61 +18,45 @@ triggers query_lc => qr/^\+?\(?\d+\)?
                        $/x;
 
 handle query => sub {
-    my ($output, $lon, $lat, $location);
-    
-    my $ua = LWP::UserAgent->new;
-    $ua->agent('DuckDuckGo');
-    $ua->from('jagtalon@duckduckgo.com');
-
-    my $heading = "Phone Number Information ($_)";
+    my ($output, $lon, $lat, $area);
+   
     if(my $iso_country_code = lc Number::Phone::Country::phone2country($_)) {
-        my $geocoder = Geo::Coder::OSM->new(sources => ['mapquest'], ua => $ua);
-
         #Get the country code.
         $iso_country_code = $iso_country_code eq 'uk' ? 'gb' : $iso_country_code;
         my $country = Locale::Country::code2country($iso_country_code, 'alpha-2');
         #Check if the number is not in the US.
         return if $iso_country_code eq 'nanp';
-        $output = qq(From: <a href='http://mapq.st/map?q=$country'>$country</a>);
-        $location = $geocoder->geocode(
-            location => "$country"
-        );
-
+        $output = qq(Phone number $_ approximate area:);
+        my $heading = "$country";
+        
         #What else can we get from the phone number?
         my $phone_info = Number::Phone->new(uc $iso_country_code, $_);
         if(defined $phone_info) {
             my $human = $phone_info->format;
-            my $area = $phone_info->areaname;
-            $heading = "Phone Number Information ($human)";
+            $area = $phone_info->areaname;
 
             #Check if the area is available.
             if(defined $area) {
                 $area = String::Interpolate::interpolate($area);
                 utf8::decode($area);
                 my $url = uri_escape_utf8("$area, $country");
-                $output = qq(From: <a href='http://mapq.st/map?q=$url'>$area, $country</a>);
-                $location = $geocoder->geocode(
-                    location => "$area, $iso_country_code"
-                );
-            } else {
-                $output = qq(From: <a href='http://mapq.st/map?q=$country'>$country</a>);
-                $location = $geocoder->geocode(
-                    location => "$country"
-                );
+                $output = qq(Phone Number $human approximate area:);
+                $heading = "$area, $country";
             }
-
-            #Get the map.
-            if(defined $location) {
-                $lat = $location->{lat};
-                $lon = $location->{lon};
-                $output .= qq(<img src='/imq2/?size=500,150&zoom=4&center=$lat,$lon&size=400,200&imageType=jpg&mcenter=$lat,$lon'>);
-            }
-
-            #Get country code.
-            if(my $country_code = $phone_info->country_code) {
-                $output .= qq(Country code: +$country_code);
-            }
+            $output = qq(Phone number $human approximate area:);
         }
+
+        #Get the map.
+        my ($lat, $lon) = Locale::Country::Geo->geolocation($iso_country_code);
+        $output .= qq(<img src='/imq2/?size=550,150&zoom=4&center=$lat,$lon&size=400,200&imageType=jpg'>);
+
+        #More
+        if(defined $phone_info) {
+            $output .= qq(More at <a href='http://mapq.st/map?q=$country'>MapQuest</a>);
+        } else {
+            $output .= qq(More at <a href='http://mapq.st/map?q=$area, $country'>MapQuest</a>);
+        }
+
         return $output, heading => $heading, html => $output;
     }
     return;
