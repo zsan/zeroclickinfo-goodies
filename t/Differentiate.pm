@@ -15,6 +15,8 @@ ddg_goodie_test(
         'differentiate x^2' => test_zci('2*x'),
         'derivative of x^2' => test_zci('2*x'),
         'd/dx of x^2' => test_zci('2*x'),
+
+        'differentiate sin(x)' => test_zci('cos(x)'),
 );
 
 done_testing;
