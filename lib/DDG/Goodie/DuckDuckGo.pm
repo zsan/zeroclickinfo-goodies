@@ -21,11 +21,25 @@ my %data = (
     roboduck_html       => "DuckDuckGo's official <a href='https://en.wikipedia.org/wiki/IRC_Bot'>IRC bot</a>: <a href='https://github.com/Getty/duckduckgo-roboduck'>https://github.com/Getty/duckduckgo-roboduck</a>",
     roboduck            => "DuckDuckGo's official IRC bot: https://github.com/Getty/duckduckgo-roboduck",
     quackandhack        => "QUACK!",
+    duck                => "I am the duck. Dax the duck.",
+    duck_html           => "<img src='https://duckduckgo.com/assets/logo_header.v101.png' alt='Dax' /><br/>I am the duck. Dax the duck.",
+    dax                => "I am the duck. Dax the duck.",
+    dax_html           => "<img src='https://duckduckgo.com/assets/logo_header.v101.png' alt='Dax' /><br/>I am the duck. Dax the duck.",
 );
 
 triggers any => keys %data, qw/zero 0/;
 
 zci is_cached => 1;
+
+primary_example_queries 'help';
+secondary_example_queries 'Zero-Click Info', 'zeroclick';
+description 'take the average of a list of numbers';
+name 'DuckDuckGo';
+code_url 'https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/DuckDuckGo.pm';
+category 'cheat_sheets';
+topics 'everyday';
+attribution twitter => 'crazedpsyc',
+            cpan    => 'CRZEDPSYC' ;
 
 handle query_nowhitespace_nodash => sub {
     $_ = lc;
