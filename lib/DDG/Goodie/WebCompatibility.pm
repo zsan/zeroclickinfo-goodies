@@ -24,7 +24,7 @@ handle query_raw => sub {
     my $feature = $data->{$1};
     my $info = "$feature->{title}: $feature->{description}";
     $info .= "($feature->{notes})" if $feature->{notes} ne '';
-    my $compatibility = '<i>Works in: </i>';
+    my $compatibility = '<i>Works in:</i>:';
     $compatibility .= join ', ', map {
       my $browser = $_;
       my $version_iterator = 0;
@@ -49,7 +49,7 @@ handle query_raw => sub {
                   . '</ul>' : '');
     my $attribution = 'More at';
     my $url = 'http://caniuse.com';
-    my ($title, $description) = $info =~ /(.*):(.*)/;
+    my ($title, $description) = $info =~ /(.*): (.*)/;
     my $text = my $html = "$description\n$compatibility";
     $html =~ s/\n/<br>/g;
     $text =~ s:</?i>::g;
