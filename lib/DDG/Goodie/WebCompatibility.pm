@@ -41,7 +41,7 @@ handle query_raw => sub {
      ($support eq 'n' ? '' :
         "$json->{agents}{$_}{browser} (v$minimumCompatibleVersion+)");
     } grep {ref $feature->{stats}{$_} eq 'HASH'} keys %{$feature->{stats}};
-    for ($compatibility) {s/>, /> /g; s/, ,//g; s/(.*), (.*)/$1 and $2/}
+    for ($compatibility) {s/>(, )+/> /g; s/,( ,)+/,/g; s/, $//; s/(.*), (.*)/$1 and $2/}
     my $links = (scalar @{$feature->{links}} > 0 ? '<ul>'
                   . (join '', map {
                         "<li><a href=\"$_->{url}\">$_->{title}</a></li>"
