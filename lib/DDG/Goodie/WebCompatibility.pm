@@ -49,12 +49,14 @@ handle query_raw => sub {
                   . '</ul>' : '');
     my $attribution = 'More at';
     my $url = 'http://caniuse.com';
-    my $text = my $html = "$info\n$compatibility";
+    my ($title, $description) = $info =~ /(.*):(.*)/;
+    my $text = my $html = "$description\n$compatibility";
     $html =~ s/\n/<br>/g;
     $text =~ s:</?i>::g;
     return "$text\n$attribution $url",
-            html => $html . "<br>$links<a class=\"zero_click_more_at_link\" "
-                    . "href=\"$url\">$attribution caniuse.com</a>";
+            html => "$html<br>$links<a class=\"zero_click_more_at_link\" "
+                    . "href=\"$url\">$attribution caniuse.com</a>",
+            heading => $title;
 };
 
 1;
