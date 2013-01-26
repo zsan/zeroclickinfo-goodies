@@ -22,13 +22,15 @@ zci is_cached => 1;
 handle remainder => sub {
 
     my $enigma = Crypt::OOEnigma->new();
+    my $result = '';
 
     if (s/decode //) {
-        return $enigma->decipher($_);
+        $result = $enigma->decipher($_);
     } elsif (s/encode //) {
-        return $enigma->encipher($_);
+        $result = $enigma->encipher($_);
     }
 
+    return "Enigma cipher (3 rotors, start positions [0,0,0], steps to rotate [0,1,2]): $result" unless $result eq '';
     return;
 };
 
