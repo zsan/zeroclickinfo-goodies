@@ -12,7 +12,12 @@ ddg_goodie_test(
         [qw(
                 DDG::Goodie::Enigma
         )],
-        'enigma encode abcdefghijklmnopqrstuvwxyz' => test_zci('Enigma cipher (3 rotors, start positions [0,0,0], steps to rotate [0,1,2]): ZYHVPZNJBIHCUKXWXEUOSBLJRA'),
+        'enigma encode abcdefghijklmnopqrstuvwxyz' => test_zci(
+            'Enigma cipher (3 rotors, start positions [0,0,0], steps to rotate [0,1,2]): '
+            . 'ZYHVPZNJBIHCUKXWXEUOSBLJRA',
+            html => "<a href='https://en.wikipedia.org/wiki/Enigma_machine'>Enigma cipher</a> "
+                  . "(3 rotors, start positions [0,0,0], steps to rotate [0,1,2]): "
+                  . "ZYHVPZNJBIHCUKXWXEUOSBLJRA"),
 );
 
 done_testing;

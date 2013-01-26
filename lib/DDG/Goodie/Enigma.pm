@@ -30,7 +30,10 @@ handle remainder => sub {
         $result = $enigma->encipher($_);
     }
 
-    return "Enigma cipher (3 rotors, start positions [0,0,0], steps to rotate [0,1,2]): $result" unless $result eq '';
+    return "Enigma cipher (3 rotors, start positions [0,0,0], steps to rotate [0,1,2]): $result",
+        html => "<a href='https://en.wikipedia.org/wiki/Enigma_machine'>Enigma cipher</a> "
+              . "(3 rotors, start positions [0,0,0], steps to rotate [0,1,2]): $result"
+        unless $result eq '';
     return;
 };
 
