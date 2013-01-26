@@ -4,8 +4,8 @@ package DDG::Goodie::Enigma;
 use DDG::Goodie;
 use Crypt::OOEnigma;
 
-primary_example_queries 'enigma hello';
-#secondary_example_queries 'enigma svool';
+primary_example_queries 'enigma encode hello';
+secondary_example_queries 'enigma decode XNJRH';
 description 'World War II Enigma encryption';
 name 'Enigma';
 code_url 'https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Enigma.pm';
