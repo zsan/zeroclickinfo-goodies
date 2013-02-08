@@ -2841,15 +2841,15 @@ my %services = (
 },
 );
 
-my @triggers = (
-    'terms',
-    'tos',
+my %triggers = (
+    'terms' => undef,
+    'tos' => undef,
     map {
-        map { lc $_ } keys %{$services{$_}}
+        map { (lc $_ => undef) } keys %{$services{$_}}
     } keys %services
 );
 
-triggers startend => @triggers;
+triggers startend => keys %triggers;
 
 handle remainder => sub {
     if (defined $services{$_}) {
