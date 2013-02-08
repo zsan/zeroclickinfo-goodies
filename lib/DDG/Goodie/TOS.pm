@@ -2849,20 +2849,26 @@ my %triggers = (
     } keys %services
 );
 
+my %tlds = (map { s/^.+(\.[a-z]+)$/$1/; ($_ => undef) } keys %services);
+
 triggers startend => keys %triggers;
 
 handle remainder => sub {
-    if (defined $services{$_}) {
+    my $service = $_;
+    map {
+        $service = "$service$_" if defined $services{"$service$_"};
+    } keys %tlds if not defined $services{$service};
+    if ($services{$service}) {
         my $text = '';
         my $html = '';
-        foreach my $document (keys %{$services{$_}}) {
-            $text .= "$document: <$services{$_}{$document}>, ";
-            $html .= "<a href='$services{$_}{$document}'>$document</a>, ";
+        foreach my $document (keys %{$services{$service}}) {
+            $text .= "$document: <$services{$service}{$document}>, ";
+            $html .= "<a href='$services{$service}{$document}'>$document</a>, ";
         }
         $text =~ s/, $/ /;
         $html =~ s/, $/ /;
-        $text .= "($_)";
-        $html .= "($_)";
+        $text .= "($service)";
+        $html .= "($service)";
         return $text, html => $html;
     }
     return;
