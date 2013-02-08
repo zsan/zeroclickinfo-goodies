@@ -7,6 +7,8 @@ triggers startend => "terms", "tos";
 
 zci answer_type => "tos_link";
 
+zci is_cached => 1;
+
 primary_example_queries 'terms of service bankofamerica.com';
 secondary_example_queries 'tos ask.com', 'tos blogspot.com';
 description 'find the terms of service of a service';
