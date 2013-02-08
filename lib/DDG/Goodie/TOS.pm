@@ -3,8 +3,6 @@ package DDG::Goodie::TOS;
 
 use DDG::Goodie;
 
-triggers startend => "terms", "tos";
-
 zci answer_type => "tos_link";
 
 zci is_cached => 1;
@@ -2843,8 +2841,17 @@ my %services = (
 },
 );
 
-handle query_raw => sub { 
-    s/ ?(tos|terms? of service) ?//gi;
+my @triggers = (
+    'terms',
+    'tos',
+    map {
+        map { lc $_ } keys %{$services{$_}}
+    } keys %services
+);
+
+triggers startend => @triggers;
+
+handle remainder => sub {
     if (defined $services{$_}) {
         my $text = '';
         my $html = '';
