@@ -2848,7 +2848,7 @@ handle query_raw => sub {
     if (defined $services{$_}) {
         my $text = '';
         my $html = '';
-        foreach my $document (keys $services{$_}) {
+        foreach my $document (keys %{$services{$_}}) {
             $text .= "$document: <$services{$_}{$document}>, ";
             $html .= "<a href='$services{$_}{$document}'>$document</a>, ";
         }
