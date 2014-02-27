@@ -1,9 +1,9 @@
 ---
 before_install:
   - cpanm Dist::Zilla
-  - dzil authordeps | grep -ve '^\W' | xargs cpanm
+  - dzil authordeps | grep -ve '^\W' | cpanm --notest
 install:
-  - dzil listdeps | grep -ve '^\W' | xargs cpanm
+  - dzil listdeps | grep -ve '^\W' | cpanm --notest
   - cpanm App::DuckPAN
   - duckpan DDG
 language: perl
