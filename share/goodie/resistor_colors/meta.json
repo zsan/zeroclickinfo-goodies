@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"science\"]",
+   "perl_module" : "DDG::Goodie::ResistorColors",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "ResistorColors",
+   "example_query" : "4.7k ohm",
+   "other_queries" : "[\"1\u00e2\u0084\u00a6\"]",
+   "description" : "find resistor color bands",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "resistor_colors",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/ResistorColors.pm\",\"t/ResistorColors.t\"]"
+}

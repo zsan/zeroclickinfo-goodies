@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"programming\",\"math\",\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::Latex",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Latex",
+   "example_query" : "latex summation",
+   "description" : "Show the Latex command for a keyword",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "latex",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Latex.pm\",\"t/Latex.t\"]"
+}

@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"words_and_games\"]",
+   "perl_module" : "DDG::Goodie::Fortune",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Fortune",
+   "example_query" : "unix fortune cookie",
+   "description" : "get a random phrase from the original fortunes file",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "fortune",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Fortune.pm\",\"t/Fortune.t\"]"
+}

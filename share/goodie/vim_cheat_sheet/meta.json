@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"computing\",\"geek\",\"programming\",\"sysadmin\"]",
+   "perl_module" : "DDG::Goodie::VimCheatSheet",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "VimCheatSheet",
+   "example_query" : "vim help",
+   "other_queries" : "[\"vi quick reference\",\"vi commands\",\"vi guide\",\"vim cheat sheet\",\"vim commands\"]",
+   "description" : "Vim cheat sheet",
+   "repo" : "goodies",
+   "src_name" : "http://rtorruellas.com/vim-cheat-sheet/",
+   "id" : "vim_cheat_sheet",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/VimCheatSheet.pm\",\"t/VimCheatSheet.t\"]"
+}

@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"sysadmin\"]",
+   "perl_module" : "DDG::Goodie::ParseCron",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "ParseCron",
+   "example_query" : "crontab * */3 * * *",
+   "other_queries" : "[\"crontab 42 12 3 Feb Sat\"]",
+   "description" : "show the next occurrence of a cron job in human-readable form",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "parse_cron",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/ParseCron.pm\",\"t/ParseCron.t\"]"
+}

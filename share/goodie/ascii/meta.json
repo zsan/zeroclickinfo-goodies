@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"cryptography\"]",
+   "perl_module" : "DDG::Goodie::Ascii",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Ascii",
+   "example_query" : "0110100001100101011011000110110001101111 to ascii",
+   "description" : "convert binary data to readable characters",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "ascii",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Ascii.pm\",\"t/Ascii.t\"]"
+}

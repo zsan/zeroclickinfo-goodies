@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"words_and_games\"]",
+   "perl_module" : "DDG::Goodie::NLetterWords",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "NLetterWords",
+   "example_query" : "5 letter words",
+   "other_queries" : "[\"12 character word\"]",
+   "description" : "find words of a certain length",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "nletter_words",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/NLetterWords.pm\",\"t/NLetterWords.t\"]"
+}

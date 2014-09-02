@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"sysadmin\"]",
+   "perl_module" : "DDG::Goodie::EmailValidator",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "EmailValidator",
+   "example_query" : "validate foo@example.com",
+   "description" : "Checks given email address.",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "email_validator",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/EmailValidator.pm\",\"t/EmailValidator.t\"]"
+}

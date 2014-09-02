@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"math\"]",
+   "perl_module" : "DDG::Goodie::Perimeter",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Perimeter",
+   "example_query" : "circumference circle 1",
+   "other_queries" : "[\"perimeter hexagon 45\",\"perimeter of triangle 1.5 2 3.2\",\"perimeter of rectangle 1 2\",\"perimeter of square 3\"]",
+   "description" : "find the perimeter of a geometric shape",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "perimeter",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Perimeter.pm\",\"t/Perimeter.t\"]"
+}

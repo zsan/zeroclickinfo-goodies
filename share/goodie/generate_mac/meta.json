@@ -1,0 +1,14 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::GenerateMAC",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "GenerateMAC",
+   "example_query" : "please generate mac address",
+   "description" : "generates a MAC address",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "generate_mac",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/GenerateMAC.pm\",\"t/GenerateMAC.t\"]"
+}

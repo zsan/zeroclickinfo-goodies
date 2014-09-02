@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"everyday\"]",
+   "perl_module" : "DDG::Goodie::UN",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "UN",
+   "example_query" : "UN Number 0009",
+   "description" : "gives a description for a given UN number",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "un",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/UN.pm\",\"t/UN.t\"]"
+}

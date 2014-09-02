@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"words_and_games\"]",
+   "perl_module" : "DDG::Goodie::Spell",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Spell",
+   "example_query" : "spell hypocrit",
+   "description" : "find spelling suggestions for a given word",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "spell",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Spell.pm\",\"t/Spell.t\"]"
+}

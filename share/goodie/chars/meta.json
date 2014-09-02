@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"programming\"]",
+   "perl_module" : "DDG::Goodie::Chars",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Chars",
+   "example_query" : "chars test",
+   "other_queries" : "[\"chars this is a test\"]",
+   "description" : "count the number of charaters in a query",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "chars",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Chars.pm\",\"t/Chars.t\"]"
+}

@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::FedEx",
+   "icon_url" : "/i/fedex.com.ico",
+   "status" : "live",
+   "name" : "FedEx",
+   "example_query" : "fedex 9241990100130206401644",
+   "other_queries" : "[\"federal express 9241990100130206401644\"]",
+   "description" : "Track a FedEx package",
+   "repo" : "goodies",
+   "src_name" : "FedEx",
+   "id" : "fed_ex",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/FedEx.pm\",\"t/FedEx.t\"]"
+}

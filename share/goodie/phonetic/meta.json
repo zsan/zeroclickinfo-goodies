@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::Phonetic",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Phonetic",
+   "example_query" : "phonetic what duck",
+   "description" : "spell a string phonetically with the NATO alphabet",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "phonetic",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Phonetic.pm\",\"t/Phonetic.t\"]"
+}

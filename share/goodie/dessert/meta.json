@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"food_and_drink\",\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::Dessert",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Dessert",
+   "example_query" : "a dessert that starts with the letter a",
+   "other_queries" : "[\"dessert that begins with the letter z\"]",
+   "description" : "Returns a dessert given a letter.",
+   "repo" : "goodies",
+   "src_name" : "http://food.sulekha.com/dishes/course/desserts/alphabets/a.htm",
+   "id" : "dessert",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Dessert.pm\",\"t/Dessert.t\"]"
+}

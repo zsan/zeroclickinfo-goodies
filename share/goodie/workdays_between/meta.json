@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"everyday\"]",
+   "perl_module" : "DDG::Goodie::WorkdaysBetween",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "WorkdaysBetween",
+   "example_query" : "workdays between 01/31/2000 01/31/2001",
+   "other_queries" : "[\"workdays between 01/31/2000 01/31/2001 inclusive\"]",
+   "description" : "Calculate the number of workdays between two dates. Does not consider holidays.",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "workdays_between",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/WorkdaysBetween.pm\",\"t/WorkdaysBetween.t\"]"
+}

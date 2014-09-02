@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"programming\"]",
+   "perl_module" : "DDG::Goodie::EmToPx",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "EmToPx",
+   "example_query" : "10 px to em",
+   "other_queries" : "[\"12.2 px in em assuming a 12.2 font size\"]",
+   "description" : "convert from px to em",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "em_to_px",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/EmToPx.pm\",\"t/EmToPx.t\"]"
+}

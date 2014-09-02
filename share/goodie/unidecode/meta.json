@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"programming\"]",
+   "perl_module" : "DDG::Goodie::Unidecode",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Unidecode",
+   "example_query" : "unidecode m\u00f8\u00e6p",
+   "other_queries" : "[\"unidecode \u00c3\u00a5\u00c3\u00a4\u00c2\u00ba\u00c2\u00b0\"]",
+   "description" : "decode special non-latin characters",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "unidecode",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Unidecode.pm\",\"t/Unidecode.t\"]"
+}

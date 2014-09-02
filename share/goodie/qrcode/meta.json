@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"cryptography\"]",
+   "perl_module" : "DDG::Goodie::QRCode",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "QRCode",
+   "example_query" : "qrcode http://ddg.gg",
+   "description" : "generate a QR code from your query",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "qrcode",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/QRCode.pm\",\"t/QRCode.t\"]"
+}

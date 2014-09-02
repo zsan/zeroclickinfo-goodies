@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"programming\"]",
+   "perl_module" : "DDG::Goodie::Unicode",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Unicode",
+   "example_query" : "U+590c",
+   "other_queries" : "[\"unicode white smiling face\"]",
+   "description" : "get information about a unicode character",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "unicode",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Unicode.pm\",\"t/Unicode.t\"]"
+}

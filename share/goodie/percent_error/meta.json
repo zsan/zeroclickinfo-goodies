@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"math\"]",
+   "perl_module" : "DDG::Goodie::PercentError",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "PercentError",
+   "example_query" : "percent-error 34.5 35",
+   "other_queries" : "[\"%err 41 43\",\"%-error 2.88 2.82\"]",
+   "description" : "find the percent error given accepted and experimental values",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "percent_error",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/PercentError.pm\",\"t/PercentError.t\"]"
+}

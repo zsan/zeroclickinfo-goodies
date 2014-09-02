@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"words_and_games\"]",
+   "perl_module" : "DDG::Goodie::TitleCase",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "TitleCase",
+   "example_query" : "titlecase test",
+   "description" : "return the query in title case",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "title_case",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/TitleCase.pm\",\"t/TitleCase.t\"]"
+}

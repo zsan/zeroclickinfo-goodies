@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"cryptography\"]",
+   "perl_module" : "DDG::Goodie::Passphrase",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Passphrase",
+   "example_query" : "random passphrase",
+   "other_queries" : "[\"4 word random passphrase\",\"pass phrase 3 words\"]",
+   "description" : "generate a random passphrase",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "passphrase",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Passphrase.pm\",\"t/Passphrase.t\"]"
+}

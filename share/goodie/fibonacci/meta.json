@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"math\"]",
+   "perl_module" : "DDG::Goodie::Fibonacci",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Fibonacci",
+   "example_query" : "fib 7",
+   "other_queries" : "[\"fibonacci 33\"]",
+   "description" : "Returns the n-th element of Fibonacci sequence",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "fibonacci",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Fibonacci.pm\",\"t/Fibonacci.t\"]"
+}

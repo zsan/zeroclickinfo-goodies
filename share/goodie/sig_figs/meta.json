@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"math\"]",
+   "perl_module" : "DDG::Goodie::SigFigs",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "SigFigs",
+   "example_query" : "sigfigs 01.1234000",
+   "other_queries" : "[\"significant figures 000123000\"]",
+   "description" : "return the count of significant figures in a number",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "sig_figs",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/SigFigs.pm\",\"t/SigFigs.t\"]"
+}

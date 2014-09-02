@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"gaming\",\"entertainment\"]",
+   "perl_module" : "DDG::Goodie::Poker",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Poker",
+   "example_query" : "poker odds three of a kind",
+   "other_queries" : "[\"probability poker flush\"]",
+   "description" : "returns requested statistic of the requested poker hand",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "poker",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Poker.pm\",\"t/Poker.t\"]"
+}

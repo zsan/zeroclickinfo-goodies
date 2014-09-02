@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"sysadmin\"]",
+   "perl_module" : "DDG::Goodie::Teredo",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Teredo",
+   "example_query" : "teredo 2001:0000:4136:e378:8000:63bf:3fff:fdd2",
+   "description" : "Teredo address analyzer",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "teredo",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Teredo.pm\",\"t/Teredo.t\"]"
+}

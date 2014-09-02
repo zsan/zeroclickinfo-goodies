@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"gaming\",\"entertainment\"]",
+   "perl_module" : "DDG::Goodie::Chess960",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Chess960",
+   "example_query" : "chess960 random",
+   "description" : "Generates a random starting position for Chess960",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "chess960",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Chess960.pm\",\"t/Chess960.t\"]"
+}

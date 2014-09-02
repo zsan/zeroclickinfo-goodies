@@ -1,0 +1,13 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::MoonPhases",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "MoonPhases",
+   "description" : null,
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "moon_phases",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/MoonPhases.pm\",\"t/MoonPhases.t\"]"
+}

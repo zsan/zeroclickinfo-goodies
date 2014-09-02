@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::IPS",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "IPS",
+   "example_query" : "EM999999999IN",
+   "description" : "Track a package from IPS",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "ips",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/IPS.pm\",\"t/IPS.t\"]"
+}

@@ -1,0 +1,13 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::FeatureTest",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "FeatureTest",
+   "description" : null,
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "feature_test",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/FeatureTest.pm\",\"t/FeatureTest.t\"]"
+}

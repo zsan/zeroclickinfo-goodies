@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"computing\",\"math\"]",
+   "perl_module" : "DDG::Goodie::Conversions",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Conversions",
+   "example_query" : "convert 5 oz to grams",
+   "other_queries" : "[\"5 ounces to g\",\"metric ton stone\"]",
+   "description" : "convert between various weights and measures",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "conversions",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Conversions.pm\",\"t/Conversions.t\"]"
+}

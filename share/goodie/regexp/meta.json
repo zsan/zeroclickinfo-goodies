@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"programming\",\"sysadmin\"]",
+   "perl_module" : "DDG::Goodie::Regexp",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Regexp",
+   "example_query" : "regexp /(.*)/ ddg",
+   "description" : "Regular expressions",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "regexp",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Regexp.pm\",\"t/Regexp.t\"]"
+}

@@ -1,0 +1,13 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::CalcRoots",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "CalcRoots",
+   "description" : null,
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "calc_roots",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/CalcRoots.pm\",\"t/CalcRoots.t\"]"
+}

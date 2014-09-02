@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"math\"]",
+   "perl_module" : "DDG::Goodie::AspectRatio",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "AspectRatio",
+   "example_query" : "aspect ratio 4:3 640:?",
+   "description" : "complete the missing value with a given ratio",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "aspect_ratio",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/AspectRatio.pm\",\"t/AspectRatio.t\"]"
+}

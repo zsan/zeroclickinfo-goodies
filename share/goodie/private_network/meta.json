@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"sysadmin\"]",
+   "perl_module" : "DDG::Goodie::PrivateNetwork",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "PrivateNetwork",
+   "example_query" : "private networks",
+   "other_queries" : "[\"private ips\"]",
+   "description" : "show private IP blocks",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "private_network",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/PrivateNetwork.pm\",\"t/PrivateNetwork.t\"]"
+}

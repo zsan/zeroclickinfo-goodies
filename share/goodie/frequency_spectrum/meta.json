@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"science\"]",
+   "perl_module" : "DDG::Goodie::FrequencySpectrum",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "FrequencySpectrum",
+   "example_query" : "50 hz",
+   "other_queries" : "[\"400 thz\"]",
+   "description" : "Returns information about light, radio, and sound frequencies",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "frequency_spectrum",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/FrequencySpectrum.pm\",\"t/FrequencySpectrum.t\"]"
+}

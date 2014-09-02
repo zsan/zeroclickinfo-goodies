@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::Hijri",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Hijri",
+   "example_query" : "22/8/2003 to the hijri calendar",
+   "other_queries" : "[\"23/6/1424 to gregorian\"]",
+   "description" : "convert dates from the Gregorian calendar to the Hijri calendar and back",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "hijri",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Hijri.pm\",\"t/Hijri.t\"]"
+}

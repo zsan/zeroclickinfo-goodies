@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"everyday\"]",
+   "perl_module" : "DDG::Goodie::DuckDuckGo",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "DuckDuckGo",
+   "example_query" : "help",
+   "other_queries" : "[\"Zero-Click Info\",\"zeroclick\"]",
+   "description" : "DuckDuckGo help and quick links",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "duck_duck_go",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/DuckDuckGo.pm\",\"t/DuckDuckGo.t\"]"
+}

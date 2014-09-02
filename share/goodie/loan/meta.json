@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"economy_and_finance\"]",
+   "perl_module" : "DDG::Goodie::Loan",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Loan",
+   "example_query" : "loan $500000 at 4.5% with 20% down",
+   "other_queries" : "[\"loan $500000 at 4.5% with 20% down 15 years\",\"borrow $500000 4.5%\",\"mortgage $500000 4.5% 20% down 15 years\"]",
+   "description" : "Calculate monthly payment and total interest for conventional mortgage",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "loan",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Loan.pm\",\"t/Loan.t\"]"
+}

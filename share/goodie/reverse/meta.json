@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"words_and_games\"]",
+   "perl_module" : "DDG::Goodie::Reverse",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Reverse",
+   "example_query" : "reverse esrever",
+   "description" : "reverse the order of the characters in your query",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "reverse",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Reverse.pm\",\"t/Reverse.t\"]"
+}

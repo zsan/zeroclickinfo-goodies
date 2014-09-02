@@ -1,0 +1,13 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::Paper",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Paper",
+   "description" : null,
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "paper",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Paper.pm\",\"t/Paper.t\"]"
+}

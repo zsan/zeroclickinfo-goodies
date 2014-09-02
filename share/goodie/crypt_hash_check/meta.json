@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"cryptography\"]",
+   "perl_module" : "DDG::Goodie::CryptHashCheck",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "CryptHashCheck",
+   "example_query" : "hash 624d420035fc9471f6e16766b7132dd6bb34ea62",
+   "other_queries" : "[\"hash 1f9b59a2390bb77d2c446837d6aeab067f01b05732735f47099047cd7d3e9f85\"]",
+   "description" : "Identifies cryptographic hash function type.",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "crypt_hash_check",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/CryptHashCheck.pm\",\"t/CryptHashCheck.t\"]"
+}

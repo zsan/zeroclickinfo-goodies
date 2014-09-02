@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"math\"]",
+   "perl_module" : "DDG::Goodie::PrimeFactors",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "PrimeFactors",
+   "example_query" : "prime factors of 30",
+   "other_queries" : "[\"72 prime factors\"]",
+   "description" : "Returns the prime factors of the entered number",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "prime_factors",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/PrimeFactors.pm\",\"t/PrimeFactors.t\"]"
+}

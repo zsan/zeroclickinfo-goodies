@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"everyday\"]",
+   "perl_module" : "DDG::Goodie::CalendarToday",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "CalendarToday",
+   "example_query" : "calendar",
+   "other_queries" : "[\"calendar november\",\"calendar next november\",\"calendar november 2015\",\"cal 29 nov 1980\",\"cal 29.11.1980\",\"cal 1980-11-29\"]",
+   "description" : "Print calendar of current / given month and highlight (to)day",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "calendar_today",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/CalendarToday.pm\",\"t/CalendarToday.t\"]"
+}

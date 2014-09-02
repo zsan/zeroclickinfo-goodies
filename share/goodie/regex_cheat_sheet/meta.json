@@ -1,0 +1,15 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::RegexCheatSheet",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "RegexCheatSheet",
+   "example_query" : "regex",
+   "other_queries" : "[\"regexp $\"]",
+   "description" : null,
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "regex_cheat_sheet",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/RegexCheatSheet.pm\",\"t/RegexCheatSheet.t\"]"
+}

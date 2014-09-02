@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"sysadmin\"]",
+   "perl_module" : "DDG::Goodie::PublicDNS",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "PublicDNS",
+   "example_query" : "public dns",
+   "description" : "list common public DNS servers and their IP addresses",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "public_dns",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/PublicDNS.pm\",\"t/PublicDNS.t\"]"
+}

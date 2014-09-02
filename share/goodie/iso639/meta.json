@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"programming\"]",
+   "perl_module" : "DDG::Goodie::ISO639",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "ISO639",
+   "example_query" : "iso639 english",
+   "other_queries" : "[\"iso639 ab\"]",
+   "description" : "lookup ISO639 language names and codes",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "iso639",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/ISO639.pm\",\"t/ISO639.t\"]"
+}

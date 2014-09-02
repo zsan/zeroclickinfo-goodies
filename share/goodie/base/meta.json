@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"math\"]",
+   "perl_module" : "DDG::Goodie::Base",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Base",
+   "example_query" : "255 in hex",
+   "other_queries" : "[\"255 in base 16\",\"42 in binary\"]",
+   "description" : "convert a number to an arbitrary base",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "base",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Base.pm\",\"t/Base.t\"]"
+}

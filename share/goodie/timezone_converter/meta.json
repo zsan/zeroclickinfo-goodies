@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"travel\"]",
+   "perl_module" : "DDG::Goodie::TimezoneConverter",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "TimezoneConverter",
+   "example_query" : "10:00AM MST to PST",
+   "other_queries" : "[\"19:00 UTC to EST\",\"1am UTC to PST\"]",
+   "description" : "convert times between timezones",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "timezone_converter",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/TimezoneConverter.pm\",\"t/TimezoneConverter.t\"]"
+}

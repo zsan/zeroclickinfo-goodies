@@ -1,0 +1,13 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::Simple",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Simple",
+   "description" : null,
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "simple",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Simple.pm\",\"t/Simple.t\"]"
+}

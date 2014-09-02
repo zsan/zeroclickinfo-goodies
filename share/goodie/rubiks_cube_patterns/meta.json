@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::RubiksCubePatterns",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "RubiksCubePatterns",
+   "example_query" : "rcube stripes",
+   "other_queries" : "[\"rcube cube in a cube\",\"rcube swap centers\"]",
+   "description" : "create interesting patterns from a solved Rubik's Cube",
+   "repo" : "goodies",
+   "src_name" : "http://math.cos.ucf.edu/~reid/Rubik/patterns.html",
+   "id" : "rubiks_cube_patterns",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/RubiksCubePatterns.pm\",\"t/RubiksCubePatterns.t\"]"
+}

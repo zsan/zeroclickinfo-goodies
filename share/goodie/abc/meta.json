@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"trivia\"]",
+   "perl_module" : "DDG::Goodie::ABC",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "ABC",
+   "example_query" : "choose yes or no",
+   "other_queries" : "[\"choose heads or tails\",\"choose this or that or none\"]",
+   "description" : "make a random choice",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "abc",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/ABC.pm\",\"t/ABC.t\"]"
+}

@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"sysadmin\"]",
+   "perl_module" : "DDG::Goodie::UnixPermissions",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "UnixPermissions",
+   "example_query" : "chmod 755",
+   "other_queries" : "[\"permission 0644\"]",
+   "description" : "Returns the textual description of file modes in UNIX",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "unix_permissions",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/UnixPermissions.pm\",\"t/UnixPermissions.t\"]"
+}

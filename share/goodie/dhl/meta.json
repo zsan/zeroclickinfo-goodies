@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::DHL",
+   "icon_url" : "/i/www.dhl.com.ico",
+   "status" : "live",
+   "name" : "DHL",
+   "example_query" : "DHL 123456789",
+   "other_queries" : "[\"tracking 1234567891\"]",
+   "description" : "Track a package from DHL",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "dhl",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/DHL.pm\",\"t/DHL.t\"]"
+}

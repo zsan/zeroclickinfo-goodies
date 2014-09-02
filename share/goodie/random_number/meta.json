@@ -1,0 +1,13 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::RandomNumber",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "RandomNumber",
+   "description" : null,
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "random_number",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/RandomNumber.pm\",\"t/RandomNumber.t\"]"
+}

@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::LaserShip",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "LaserShip",
+   "example_query" : "LL12345678",
+   "description" : "Track a package from Lasership",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "laser_ship",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/LaserShip.pm\",\"t/LaserShip.t\"]"
+}

@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"words_and_games\"]",
+   "perl_module" : "DDG::Goodie::PigLatin",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "PigLatin",
+   "example_query" : "pig latin i love duckduckgo",
+   "description" : "translate a phrase into pig latin",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "pig_latin",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/PigLatin.pm\",\"t/PigLatin.t\"]"
+}

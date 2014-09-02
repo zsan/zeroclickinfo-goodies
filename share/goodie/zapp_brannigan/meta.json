@@ -1,0 +1,14 @@
+{
+   "topic" : "[\"entertainment\"]",
+   "perl_module" : "DDG::Goodie::ZappBrannigan",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "ZappBrannigan",
+   "example_query" : "zapp brannigan quote",
+   "description" : "retrieve a quote from the famous Zapp Brannigan",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "zapp_brannigan",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/ZappBrannigan.pm\",\"t/ZappBrannigan.t\"]"
+}

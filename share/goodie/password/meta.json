@@ -1,0 +1,13 @@
+{
+   "topic" : "[]",
+   "perl_module" : "DDG::Goodie::Password",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "Password",
+   "description" : null,
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "password",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/Password.pm\",\"t/Password.t\"]"
+}

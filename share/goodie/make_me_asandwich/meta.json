@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"geek\"]",
+   "perl_module" : "DDG::Goodie::MakeMeASandwich",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "MakeMeASandwich",
+   "example_query" : "make me a sandwich",
+   "other_queries" : "[\"sudo make me a sandwich\"]",
+   "description" : "Responds in accordance with xkcd #149",
+   "repo" : "goodies",
+   "src_name" : "http://xkcd.com/149/",
+   "id" : "make_me_asandwich",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/MakeMeASandwich.pm\",\"t/MakeMeASandwich.t\"]"
+}

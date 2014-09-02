@@ -1,0 +1,15 @@
+{
+   "topic" : "[\"special_interest\"]",
+   "perl_module" : "DDG::Goodie::USPS",
+   "icon_url" : null,
+   "status" : "live",
+   "name" : "USPS",
+   "example_query" : "EA 000 000 000 US",
+   "other_queries" : "[\"usps 7000 0000 0000 0000 0000\"]",
+   "description" : "Track a USPS package",
+   "repo" : "goodies",
+   "src_name" : null,
+   "id" : "usps",
+   "dev_milestone" : "live",
+   "code" : "[\"lib/DDG/Goodie/USPS.pm\",\"t/USPS.t\"]"
+}
