@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"special_interest\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::IPS",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "ips",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/IPS.pm\",\"t/IPS.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/IPS.pm",
+      "t/IPS.t"
+   ]
 }

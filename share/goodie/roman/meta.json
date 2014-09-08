@@ -1,15 +1,23 @@
 {
-   "topic" : "[\"cryptography\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::Roman",
    "icon_url" : null,
    "status" : "live",
    "name" : "Roman",
    "example_query" : "roman numeral MCCCXXXVII",
-   "other_queries" : "[\"roman 1337\",\"roman IV\"]",
+   "other_queries" : [
+      "roman 1337",
+      "roman IV"
+   ],
    "description" : "convert between Roman and Arabic numerals",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "roman",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Roman.pm\",\"t/Roman.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Roman.pm",
+      "t/Roman.t"
+   ]
 }

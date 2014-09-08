@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"special_interest\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::Morse",
    "icon_url" : null,
    "status" : "live",
    "name" : "Morse",
    "example_query" : "morse ... --- ...",
-   "other_queries" : "[\"morse SOS\"]",
+   "other_queries" : [
+      "morse SOS"
+   ],
    "description" : "convert to and from morse code",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "morse",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Morse.pm\",\"t/Morse.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Morse.pm",
+      "t/Morse.t"
+   ]
 }

@@ -1,15 +1,23 @@
 {
-   "topic" : "[\"geek\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::Frequency",
    "icon_url" : null,
    "status" : "live",
    "name" : "Frequency",
    "example_query" : "frequency of all characters in testing",
-   "other_queries" : "[\"frequency of B in battle\",\"frequency of all in testing 1234 ABC!\"]",
+   "other_queries" : [
+      "frequency of B in battle",
+      "frequency of all in testing 1234 ABC!"
+   ],
    "description" : "calculate the frequency of characters in a string",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "frequency",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Frequency.pm\",\"t/Frequency.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Frequency.pm",
+      "t/Frequency.t"
+   ]
 }

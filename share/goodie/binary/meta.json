@@ -1,15 +1,24 @@
 {
-   "topic" : "[\"geek\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::Binary",
    "icon_url" : null,
    "status" : "live",
    "name" : "Binary",
    "example_query" : "foo in binary",
-   "other_queries" : "[\"0x1e to binary\",\"12 as binary\",\"hex 0xffff into binary\"]",
+   "other_queries" : [
+      "0x1e to binary",
+      "12 as binary",
+      "hex 0xffff into binary"
+   ],
    "description" : "convert ASCII, numbers, and hex to binary",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "binary",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Binary.pm\",\"t/Binary.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Binary.pm",
+      "t/Binary.t"
+   ]
 }

@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"travel\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::IDN",
    "icon_url" : null,
    "status" : "live",
    "name" : "IDN",
    "example_query" : "idn ex\u00e4mple.com",
-   "other_queries" : "[\"idn xn--exmple-cua.com\"]",
+   "other_queries" : [
+      "idn xn--exmple-cua.com"
+   ],
    "description" : "encode and decode internationalized domain names",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "idn",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/IDN.pm\",\"t/IDN.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/IDN.pm",
+      "t/IDN.t"
+   ]
 }

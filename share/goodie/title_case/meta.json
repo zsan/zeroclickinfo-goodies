@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"words_and_games\"]",
+   "topic" : [
+      "language"
+   ],
    "perl_module" : "DDG::Goodie::TitleCase",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "title_case",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/TitleCase.pm\",\"t/TitleCase.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/TitleCase.pm",
+      "t/TitleCase.t"
+   ]
 }

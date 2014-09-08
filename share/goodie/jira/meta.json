@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"programming\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::Jira",
    "icon_url" : null,
    "status" : "live",
    "name" : "Jira",
    "example_query" : "SOLR-4530",
-   "other_queries" : "[\"IdentityHtmlMapper solr-4530\"]",
+   "other_queries" : [
+      "IdentityHtmlMapper solr-4530"
+   ],
    "description" : "Track Apache and Codehaus JIRA bug tickets",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "jira",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Jira.pm\",\"t/Jira.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Jira.pm",
+      "t/Jira.t"
+   ]
 }

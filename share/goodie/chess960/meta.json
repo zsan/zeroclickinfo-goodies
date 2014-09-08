@@ -1,5 +1,8 @@
 {
-   "topic" : "[\"gaming\",\"entertainment\"]",
+   "topic" : [
+      "gaming",
+      "movies & tv"
+   ],
    "perl_module" : "DDG::Goodie::Chess960",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +13,8 @@
    "src_name" : null,
    "id" : "chess960",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Chess960.pm\",\"t/Chess960.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Chess960.pm",
+      "t/Chess960.t"
+   ]
 }

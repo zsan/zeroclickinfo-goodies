@@ -1,5 +1,8 @@
 {
-   "topic" : "[\"programming\",\"sysadmin\"]",
+   "topic" : [
+      "code & hacking",
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::Regexp",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +13,8 @@
    "src_name" : null,
    "id" : "regexp",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Regexp.pm\",\"t/Regexp.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Regexp.pm",
+      "t/Regexp.t"
+   ]
 }

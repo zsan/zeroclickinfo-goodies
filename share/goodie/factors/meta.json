@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::Factors",
    "icon_url" : null,
    "status" : "live",
    "name" : "Factors",
    "example_query" : "factors of 30",
-   "other_queries" : "[\"72 factors\"]",
+   "other_queries" : [
+      "72 factors"
+   ],
    "description" : "Returns the factors of the entered number",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "factors",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Factors.pm\",\"t/Factors.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Factors.pm",
+      "t/Factors.t"
+   ]
 }

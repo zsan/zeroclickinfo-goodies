@@ -1,15 +1,25 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::Dice",
    "icon_url" : null,
    "status" : "live",
    "name" : "Dice",
    "example_query" : "throw dice",
-   "other_queries" : "[\"roll 5 dice\",\"roll 3d12\",\"roll 3d12 and 2d4\",\"roll 2 dice and 3d5\"]",
+   "other_queries" : [
+      "roll 5 dice",
+      "roll 3d12",
+      "roll 3d12 and 2d4",
+      "roll 2 dice and 3d5"
+   ],
    "description" : "give the results of a random die throw",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "dice",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Dice.pm\",\"t/Dice.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Dice.pm",
+      "t/Dice.t"
+   ]
 }

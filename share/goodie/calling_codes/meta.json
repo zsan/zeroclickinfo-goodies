@@ -1,15 +1,25 @@
 {
-   "topic" : "[\"travel\",\"geography\"]",
+   "topic" : [
+      "other / special interest",
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::CallingCodes",
    "icon_url" : null,
    "status" : "live",
    "name" : "CallingCodes",
    "example_query" : "country code 55",
-   "other_queries" : "[\"dialing code +55\",\"country calling code 55\",\"country code brazil\"]",
+   "other_queries" : [
+      "dialing code +55",
+      "country calling code 55",
+      "country code brazil"
+   ],
    "description" : "Matches country names to international calling codes",
    "repo" : "goodies",
    "src_name" : "https://en.wikipedia.org/wiki/List_of_country_calling_codes#Alphabetical_listing_by_country_or_region",
    "id" : "calling_codes",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/CallingCodes.pm\",\"t/CallingCodes.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/CallingCodes.pm",
+      "t/CallingCodes.t"
+   ]
 }

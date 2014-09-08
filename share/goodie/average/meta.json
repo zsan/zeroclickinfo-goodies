@@ -1,15 +1,23 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::Average",
    "icon_url" : null,
    "status" : "live",
    "name" : "Average",
    "example_query" : "average 12, 45, 78, 1234",
-   "other_queries" : "[\"avg 1,2,3\",\"root mean square 1,2,3\"]",
+   "other_queries" : [
+      "avg 1,2,3",
+      "root mean square 1,2,3"
+   ],
    "description" : "take the average of a list of numbers",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "average",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Average.pm\",\"t/Average.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Average.pm",
+      "t/Average.t"
+   ]
 }

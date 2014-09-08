@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"travel\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::CurrencyIn",
    "icon_url" : null,
    "status" : "live",
    "name" : "CurrencyIn",
    "example_query" : "currency in australia",
-   "other_queries" : "[\"currency in AU\"]",
+   "other_queries" : [
+      "currency in AU"
+   ],
    "description" : "find the official currency of a country",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "currency_in",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/CurrencyIn.pm\",\"t/CurrencyIn.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/CurrencyIn.pm",
+      "t/CurrencyIn.t"
+   ]
 }

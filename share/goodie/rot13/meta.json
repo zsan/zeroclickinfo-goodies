@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"cryptography\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::Rot13",
    "icon_url" : null,
    "status" : "live",
    "name" : "Rot13",
    "example_query" : "rot13 thirteen",
-   "other_queries" : "[\"rot13 guvegrra\"]",
+   "other_queries" : [
+      "rot13 guvegrra"
+   ],
    "description" : "rotate all the letters in your query by 13",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "rot13",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Rot13.pm\",\"t/Rot13.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Rot13.pm",
+      "t/Rot13.t"
+   ]
 }

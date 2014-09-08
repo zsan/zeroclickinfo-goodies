@@ -1,15 +1,24 @@
 {
-   "topic" : "[\"special_interest\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::VIN",
    "icon_url" : null,
    "status" : "live",
    "name" : "VIN",
    "example_query" : "1g8gg35m1g7123101",
-   "other_queries" : "[\"vin 1g8gg35m1g7123101\",\"1g8gg35m1g7123101 vehicle identification number\",\"1g8gg35m1g7123101 tracking\"]",
+   "other_queries" : [
+      "vin 1g8gg35m1g7123101",
+      "1g8gg35m1g7123101 vehicle identification number",
+      "1g8gg35m1g7123101 tracking"
+   ],
    "description" : "Automobile VIN lookup",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "vin",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/VIN.pm\",\"t/VIN.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/VIN.pm",
+      "t/VIN.t"
+   ]
 }

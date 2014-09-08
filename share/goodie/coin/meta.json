@@ -1,15 +1,24 @@
 {
-   "topic" : "[\"trivia\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::Coin",
    "icon_url" : null,
    "status" : "live",
    "name" : "Coin",
    "example_query" : "flip a coin",
-   "other_queries" : "[\"flip 4 coins\",\"heads or tails\",\"toss a coin\"]",
+   "other_queries" : [
+      "flip 4 coins",
+      "heads or tails",
+      "toss a coin"
+   ],
    "description" : "flip a coin",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "coin",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Coin.pm\",\"t/Coin.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Coin.pm",
+      "t/Coin.t"
+   ]
 }

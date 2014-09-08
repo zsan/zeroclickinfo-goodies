@@ -1,15 +1,24 @@
 {
-   "topic" : "[\"special_interest\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::Dewey",
    "icon_url" : null,
    "status" : "live",
    "name" : "Dewey",
    "example_query" : "dewey 644",
-   "other_queries" : "[\"etymology in the dewey decimal system\",\"dewey decimal system 640s\",\"dewey decimal system naturalism\"]",
+   "other_queries" : [
+      "etymology in the dewey decimal system",
+      "dewey decimal system 640s",
+      "dewey decimal system naturalism"
+   ],
    "description" : "get the topic or reference number of a Dewey Decimal class",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "dewey",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Dewey.pm\",\"t/Dewey.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Dewey.pm",
+      "t/Dewey.t"
+   ]
 }

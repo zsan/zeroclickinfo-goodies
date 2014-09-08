@@ -1,15 +1,23 @@
 {
-   "topic" : "[\"words_and_games\"]",
+   "topic" : [
+      "language"
+   ],
    "perl_module" : "DDG::Goodie::Palindrome",
    "icon_url" : null,
    "status" : "live",
    "name" : "Palindrome",
    "example_query" : "is a dank, sad nap. eels sleep and ask nada. a palindrome?",
-   "other_queries" : "[\"is foo a palindrome?\",\"is dad a palindrome?\"]",
+   "other_queries" : [
+      "is foo a palindrome?",
+      "is dad a palindrome?"
+   ],
    "description" : "check if a given string is a palindrome",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "palindrome",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Palindrome.pm\",\"t/Palindrome.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Palindrome.pm",
+      "t/Palindrome.t"
+   ]
 }

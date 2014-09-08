@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"programming\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::Base64",
    "icon_url" : null,
    "status" : "live",
    "name" : "Base64",
    "example_query" : "base64 encode foo",
-   "other_queries" : "[\"base64 decode dGhpcyB0ZXh0\"]",
+   "other_queries" : [
+      "base64 decode dGhpcyB0ZXh0"
+   ],
    "description" : "encode to and decode from base64",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "base64",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Base64.pm\",\"t/Base64.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Base64.pm",
+      "t/Base64.t"
+   ]
 }

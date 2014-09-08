@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"social\"]",
+   "topic" : [
+      "social networking"
+   ],
    "perl_module" : "DDG::Goodie::Rafl",
    "icon_url" : null,
    "status" : "live",
    "name" : "Rafl",
    "example_query" : "rafl is everywhere",
-   "other_queries" : "[\"where is rafl?\"]",
+   "other_queries" : [
+      "where is rafl?"
+   ],
    "description" : "rafl is everywhere!",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "rafl",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Rafl.pm\",\"t/Rafl.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Rafl.pm",
+      "t/Rafl.t"
+   ]
 }

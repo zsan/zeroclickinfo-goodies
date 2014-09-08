@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"special_interest\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::UPS",
    "icon_url" : "/i/www.ups.com.ico",
    "status" : "live",
    "name" : "UPS",
    "example_query" : "1Z2807700371226497",
-   "other_queries" : "[\"ups 1Z2807700371226497\"]",
+   "other_queries" : [
+      "ups 1Z2807700371226497"
+   ],
    "description" : "Track a UPS package",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "ups",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/UPS.pm\",\"t/UPS.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/UPS.pm",
+      "t/UPS.t"
+   ]
 }

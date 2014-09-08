@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"science\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::ReverseResistorColours",
    "icon_url" : null,
    "status" : "live",
    "name" : "ReverseResistorColours",
    "example_query" : "red yellow white gold resistor",
-   "other_queries" : "[\"resistor red yellow white\"]",
+   "other_queries" : [
+      "resistor red yellow white"
+   ],
    "description" : "find resistance based on colour bands",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "reverse_resistor_colours",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/ReverseResistorColours.pm\",\"t/ReverseResistorColours.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/ReverseResistorColours.pm",
+      "t/ReverseResistorColours.t"
+   ]
 }

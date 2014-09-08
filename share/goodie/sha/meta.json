@@ -1,15 +1,23 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::Sha",
    "icon_url" : null,
    "status" : "live",
    "name" : "Sha",
    "example_query" : "SHA this",
-   "other_queries" : "[\"sha-512 that\",\"sha512sum dim-dims\"]",
+   "other_queries" : [
+      "sha-512 that",
+      "sha512sum dim-dims"
+   ],
    "description" : "SHA hash cryptography",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "sha",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Sha.pm\",\"t/Sha.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Sha.pm",
+      "t/Sha.t"
+   ]
 }

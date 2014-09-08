@@ -1,15 +1,23 @@
 {
-   "topic" : "[\"everyday\"]",
+   "topic" : [
+      "productivity"
+   ],
    "perl_module" : "DDG::Goodie::DateMath",
    "icon_url" : null,
    "status" : "live",
    "name" : "DateMath",
    "example_query" : "Jan 1 2012 plus 32 days",
-   "other_queries" : "[\"1/1/2012 plus 5 months\",\"January first minus ten days\"]",
+   "other_queries" : [
+      "1/1/2012 plus 5 months",
+      "January first minus ten days"
+   ],
    "description" : "calculate the date with an offset",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "date_math",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/DateMath.pm\",\"t/DateMath.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/DateMath.pm",
+      "t/DateMath.t"
+   ]
 }

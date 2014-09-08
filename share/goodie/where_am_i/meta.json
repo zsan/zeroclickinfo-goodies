@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"travel\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::WhereAmI",
    "icon_url" : null,
    "status" : "live",
    "name" : "WhereAmI",
    "example_query" : "Where am I?",
-   "other_queries" : "[\"my location\"]",
+   "other_queries" : [
+      "my location"
+   ],
    "description" : "display your perceived location",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "where_am_i",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/WhereAmI.pm\",\"t/WhereAmI.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/WhereAmI.pm",
+      "t/WhereAmI.t"
+   ]
 }

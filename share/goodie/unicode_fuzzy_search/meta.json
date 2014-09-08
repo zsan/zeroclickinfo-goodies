@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"programming\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::UnicodeFuzzySearch",
    "icon_url" : null,
    "status" : "live",
    "name" : "UnicodeFuzzySearch",
    "example_query" : "unicode black heart",
-   "other_queries" : "[\"unicode 2665\"]",
+   "other_queries" : [
+      "unicode 2665"
+   ],
    "description" : "returns unicode symbols matching the input",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "unicode_fuzzy_search",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/UnicodeFuzzySearch.pm\",\"t/UnicodeFuzzySearch.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/UnicodeFuzzySearch.pm",
+      "t/UnicodeFuzzySearch.t"
+   ]
 }

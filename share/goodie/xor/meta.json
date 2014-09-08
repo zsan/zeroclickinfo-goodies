@@ -1,15 +1,23 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::Xor",
    "icon_url" : null,
    "status" : "live",
    "name" : "Xor",
    "example_query" : "4 xor 5",
-   "other_queries" : "[\"5 \u00e2\u008a\u0095 79\",\"9489 xor 394 xor 9349 xor 39 xor 29 xor 4967 xor 3985\"]",
+   "other_queries" : [
+      "5 \u2295 79",
+      "9489 xor 394 xor 9349 xor 39 xor 29 xor 4967 xor 3985"
+   ],
    "description" : "take two numbers and do a bitwise exclusive-or operation on them",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "xor",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Xor.pm\",\"t/Xor.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Xor.pm",
+      "t/Xor.t"
+   ]
 }

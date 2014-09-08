@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"special_interest\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::LaserShip",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "laser_ship",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/LaserShip.pm\",\"t/LaserShip.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/LaserShip.pm",
+      "t/LaserShip.t"
+   ]
 }

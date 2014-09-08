@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"everyday\"]",
+   "topic" : [
+      "productivity"
+   ],
    "perl_module" : "DDG::Goodie::DaysBetween",
    "icon_url" : null,
    "status" : "live",
    "name" : "DaysBetween",
    "example_query" : "days between 01/31/2000 01/31/2001",
-   "other_queries" : "[\"days between 01/31/2000 01/31/2001 inclusive\"]",
+   "other_queries" : [
+      "days between 01/31/2000 01/31/2001 inclusive"
+   ],
    "description" : "calculate the number of days between two dates",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "days_between",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/DaysBetween.pm\",\"t/DaysBetween.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/DaysBetween.pm",
+      "t/DaysBetween.t"
+   ]
 }

@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"everyday\"]",
+   "topic" : [
+      "productivity"
+   ],
    "perl_module" : "DDG::Goodie::Tips",
    "icon_url" : null,
    "status" : "live",
    "name" : "Tips",
    "example_query" : "20% tip on $21.63",
-   "other_queries" : "[\"20 percent tip for a $20 bill\"]",
+   "other_queries" : [
+      "20 percent tip for a $20 bill"
+   ],
    "description" : "calculate a total including a percentage tip",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "tips",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Tips.pm\",\"t/Tips.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Tips.pm",
+      "t/Tips.t"
+   ]
 }

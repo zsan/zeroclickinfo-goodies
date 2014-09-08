@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"special_interest\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::Phonetic",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "phonetic",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Phonetic.pm\",\"t/Phonetic.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Phonetic.pm",
+      "t/Phonetic.t"
+   ]
 }

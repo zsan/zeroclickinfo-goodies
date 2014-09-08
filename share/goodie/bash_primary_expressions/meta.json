@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"sysadmin\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::BashPrimaryExpressions",
    "icon_url" : null,
    "status" : "live",
    "name" : "BashPrimaryExpressions",
    "example_query" : "bash [ -z hello ]",
-   "other_queries" : "[\"bash if [[ \\\"abc\\\" -lt \\\"cba\\\" ]]\"]",
+   "other_queries" : [
+      "bash if [[ \"abc\" -lt \"cba\" ]]"
+   ],
    "description" : "Bash Primary Expressions Help",
    "repo" : "goodies",
    "src_name" : "http://tille.garrels.be/training/bash/ch07.html",
    "id" : "bash_primary_expressions",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/BashPrimaryExpressions.pm\",\"t/BashPrimaryExpressions.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/BashPrimaryExpressions.pm",
+      "t/BashPrimaryExpressions.t"
+   ]
 }

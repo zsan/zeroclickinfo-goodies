@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"programming\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::HexToASCII",
    "icon_url" : null,
    "status" : "live",
    "name" : "HexToASCII",
    "example_query" : "ascii 0x74657374",
-   "other_queries" : "[\"ascii 0x5468697320697320612074657374\"]",
+   "other_queries" : [
+      "ascii 0x5468697320697320612074657374"
+   ],
    "description" : "Return the ASCII representation of a given printable HEX number.",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "hex_to_ascii",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/HexToASCII.pm\",\"t/HexToASCII.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/HexToASCII.pm",
+      "t/HexToASCII.t"
+   ]
 }

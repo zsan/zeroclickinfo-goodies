@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"special_interest\"]",
+   "topic" : [
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::HKDK",
    "icon_url" : null,
    "status" : "live",
    "name" : "HKDK",
    "example_query" : "CU123456789DK",
-   "other_queries" : "[\"EE123456789HK\"]",
+   "other_queries" : [
+      "EE123456789HK"
+   ],
    "description" : "Track a package from Hongkong Post or Post Danmark",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "hkdk",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/HKDK.pm\",\"t/HKDK.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/HKDK.pm",
+      "t/HKDK.t"
+   ]
 }

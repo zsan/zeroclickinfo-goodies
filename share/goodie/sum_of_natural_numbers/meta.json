@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::SumOfNaturalNumbers",
    "icon_url" : null,
    "status" : "live",
    "name" : "SumOfNaturalNumbers",
    "example_query" : "sum 1 to 10",
-   "other_queries" : "[\"add 33 to 100\"]",
+   "other_queries" : [
+      "add 33 to 100"
+   ],
    "description" : "Add up the numbers between two values",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "sum_of_natural_numbers",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/SumOfNaturalNumbers.pm\",\"t/SumOfNaturalNumbers.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/SumOfNaturalNumbers.pm",
+      "t/SumOfNaturalNumbers.t"
+   ]
 }

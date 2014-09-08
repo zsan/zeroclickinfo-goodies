@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"sysadmin\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::Teredo",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "teredo",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Teredo.pm\",\"t/Teredo.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Teredo.pm",
+      "t/Teredo.t"
+   ]
 }

@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"words_and_games\"]",
+   "topic" : [
+      "language"
+   ],
    "perl_module" : "DDG::Goodie::PigLatin",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "pig_latin",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/PigLatin.pm\",\"t/PigLatin.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/PigLatin.pm",
+      "t/PigLatin.t"
+   ]
 }

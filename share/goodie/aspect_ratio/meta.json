@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::AspectRatio",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "aspect_ratio",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/AspectRatio.pm\",\"t/AspectRatio.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/AspectRatio.pm",
+      "t/AspectRatio.t"
+   ]
 }

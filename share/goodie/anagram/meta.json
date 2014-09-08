@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"words_and_games\"]",
+   "topic" : [
+      "language"
+   ],
    "perl_module" : "DDG::Goodie::Anagram",
    "icon_url" : null,
    "status" : "live",
    "name" : "Anagram",
    "example_query" : "anagram of filter",
-   "other_queries" : "[\"anagram filter 5\"]",
+   "other_queries" : [
+      "anagram filter 5"
+   ],
    "description" : "find the anagram(s) of your query",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "anagram",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Anagram.pm\",\"t/Anagram.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Anagram.pm",
+      "t/Anagram.t"
+   ]
 }

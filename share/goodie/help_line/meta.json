@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"everyday\"]",
+   "topic" : [
+      "productivity"
+   ],
    "perl_module" : "DDG::Goodie::HelpLine",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : "https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines",
    "id" : "help_line",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/HelpLine.pm\",\"t/HelpLine.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/HelpLine.pm",
+      "t/HelpLine.t"
+   ]
 }

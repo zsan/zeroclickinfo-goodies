@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"everyday\"]",
+   "topic" : [
+      "productivity"
+   ],
    "perl_module" : "DDG::Goodie::UN",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "un",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/UN.pm\",\"t/UN.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/UN.pm",
+      "t/UN.t"
+   ]
 }

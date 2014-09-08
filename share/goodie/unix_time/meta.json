@@ -1,15 +1,23 @@
 {
-   "topic" : "[\"sysadmin\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::UnixTime",
    "icon_url" : null,
    "status" : "live",
    "name" : "UnixTime",
    "example_query" : "unix time 0000000000000",
-   "other_queries" : "[\"epoch 0\",\"epoch 2147483647\"]",
+   "other_queries" : [
+      "epoch 0",
+      "epoch 2147483647"
+   ],
    "description" : "convert a unix epoch to human-readable time",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "unix_time",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/UnixTime.pm\",\"t/UnixTime.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/UnixTime.pm",
+      "t/UnixTime.t"
+   ]
 }

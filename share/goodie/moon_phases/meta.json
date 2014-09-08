@@ -1,5 +1,5 @@
 {
-   "topic" : "[]",
+   "topic" : [],
    "perl_module" : "DDG::Goodie::MoonPhases",
    "icon_url" : null,
    "status" : "live",
@@ -9,5 +9,8 @@
    "src_name" : null,
    "id" : "moon_phases",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/MoonPhases.pm\",\"t/MoonPhases.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/MoonPhases.pm",
+      "t/MoonPhases.t"
+   ]
 }

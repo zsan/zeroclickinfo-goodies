@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"words_and_games\"]",
+   "topic" : [
+      "language"
+   ],
    "perl_module" : "DDG::Goodie::Reverse",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "reverse",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Reverse.pm\",\"t/Reverse.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Reverse.pm",
+      "t/Reverse.t"
+   ]
 }

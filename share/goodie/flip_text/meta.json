@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"words_and_games\"]",
+   "topic" : [
+      "language"
+   ],
    "perl_module" : "DDG::Goodie::FlipText",
    "icon_url" : null,
    "status" : "live",
    "name" : "FlipText",
    "example_query" : "flip my sentence",
-   "other_queries" : "[\"mirror text\"]",
+   "other_queries" : [
+      "mirror text"
+   ],
    "description" : "flip and mirror text",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "flip_text",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/FlipText.pm\",\"t/FlipText.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/FlipText.pm",
+      "t/FlipText.t"
+   ]
 }

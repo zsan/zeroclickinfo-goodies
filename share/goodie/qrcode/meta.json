@@ -1,5 +1,7 @@
 {
-   "topic" : "[\"cryptography\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::QRCode",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +12,8 @@
    "src_name" : null,
    "id" : "qrcode",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/QRCode.pm\",\"t/QRCode.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/QRCode.pm",
+      "t/QRCode.t"
+   ]
 }

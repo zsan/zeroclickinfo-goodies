@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"programming\"]",
+   "topic" : [
+      "code & hacking"
+   ],
    "perl_module" : "DDG::Goodie::GUID",
    "icon_url" : null,
    "status" : "live",
    "name" : "GUID",
    "example_query" : "guid",
-   "other_queries" : "[\"uuid\"]",
+   "other_queries" : [
+      "uuid"
+   ],
    "description" : "generate a unique indentifier",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "guid",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/GUID.pm\",\"t/GUID.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/GUID.pm",
+      "t/GUID.t"
+   ]
 }

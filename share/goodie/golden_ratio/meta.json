@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::GoldenRatio",
    "icon_url" : null,
    "status" : "live",
    "name" : "GoldenRatio",
    "example_query" : "golden ratio 900:?",
-   "other_queries" : "[\"golden ratio ?:123.345\"]",
+   "other_queries" : [
+      "golden ratio ?:123.345"
+   ],
    "description" : "find the number in the golden ratio with a number",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "golden_ratio",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/GoldenRatio.pm\",\"t/GoldenRatio.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/GoldenRatio.pm",
+      "t/GoldenRatio.t"
+   ]
 }

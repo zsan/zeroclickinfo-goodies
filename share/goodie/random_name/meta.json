@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"words_and_games\"]",
+   "topic" : [
+      "language"
+   ],
    "perl_module" : "DDG::Goodie::RandomName",
    "icon_url" : null,
    "status" : "live",
    "name" : "RandomName",
    "example_query" : "random name",
-   "other_queries" : "[\"random person\"]",
+   "other_queries" : [
+      "random person"
+   ],
    "description" : "returns a random and fictive title, first- and lastname and day of birth",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "random_name",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/RandomName.pm\",\"t/RandomName.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/RandomName.pm",
+      "t/RandomName.t"
+   ]
 }

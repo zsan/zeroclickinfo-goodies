@@ -1,15 +1,22 @@
 {
-   "topic" : "[\"math\"]",
+   "topic" : [
+      "math & science"
+   ],
    "perl_module" : "DDG::Goodie::Calculator",
    "icon_url" : null,
    "status" : "live",
    "name" : "Calculator",
    "example_query" : "$3.43+$34.45",
-   "other_queries" : "[\"64*343\"]",
+   "other_queries" : [
+      "64*343"
+   ],
    "description" : "Basic calculations",
    "repo" : "goodies",
    "src_name" : null,
    "id" : "calculator",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Calculator.pm\",\"t/Calculator.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Calculator.pm",
+      "t/Calculator.t"
+   ]
 }

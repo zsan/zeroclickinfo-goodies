@@ -1,5 +1,9 @@
 {
-   "topic" : "[\"programming\",\"math\",\"special_interest\"]",
+   "topic" : [
+      "code & hacking",
+      "math & science",
+      "other / special interest"
+   ],
    "perl_module" : "DDG::Goodie::Latex",
    "icon_url" : null,
    "status" : "live",
@@ -10,5 +14,8 @@
    "src_name" : null,
    "id" : "latex",
    "dev_milestone" : "live",
-   "code" : "[\"lib/DDG/Goodie/Latex.pm\",\"t/Latex.t\"]"
+   "code" : [
+      "lib/DDG/Goodie/Latex.pm",
+      "t/Latex.t"
+   ]
 }
