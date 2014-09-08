@@ -1,9 +1,7 @@
 {
    "topic" : [
       "code & hacking",
-      "other / special interest",
-      "code & hacking",
-      "code & hacking"
+      "special interest"
    ],
    "perl_module" : "DDG::Goodie::VimCheatSheet",
    "icon_url" : null,

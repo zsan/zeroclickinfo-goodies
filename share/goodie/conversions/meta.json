@@ -1,7 +1,7 @@
 {
    "topic" : [
-      "code & hacking",
-      "math & science"
+      "math & science",
+      "code & hacking"
    ],
    "perl_module" : "DDG::Goodie::Conversions",
    "icon_url" : null,

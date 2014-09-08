@@ -1,7 +1,7 @@
 {
    "topic" : [
-      "gaming",
-      "movies & tv"
+      "movies & tv",
+      "gaming"
    ],
    "perl_module" : "DDG::Goodie::Poker",
    "icon_url" : null,

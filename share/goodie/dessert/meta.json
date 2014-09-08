@@ -1,7 +1,7 @@
 {
    "topic" : [
       "food & drink",
-      "other / special interest"
+      "special interest"
    ],
    "perl_module" : "DDG::Goodie::Dessert",
    "icon_url" : null,

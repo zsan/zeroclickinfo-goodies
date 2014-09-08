@@ -1,8 +1,8 @@
 {
    "topic" : [
-      "code & hacking",
       "math & science",
-      "other / special interest"
+      "code & hacking",
+      "special interest"
    ],
    "perl_module" : "DDG::Goodie::Latex",
    "icon_url" : null,
