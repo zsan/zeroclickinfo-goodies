@@ -22,6 +22,13 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/VimCheatSheet.pm",
-      "t/VimCheatSheet.t"
+      "t/VimCheatSheet.t",
+      "share/goodie/vim_cheat_sheet/README.txt",
+      "share/goodie/vim_cheat_sheet/fetch.sh",
+      "share/goodie/vim_cheat_sheet/parse.pl",
+      "share/goodie/vim_cheat_sheet/style.css",
+      "share/goodie/vim_cheat_sheet/template.tx",
+      "share/goodie/vim_cheat_sheet/vim_cheat_sheet.html",
+      "share/goodie/vim_cheat_sheet/vim_cheat_sheet.txt"
    ]
 }

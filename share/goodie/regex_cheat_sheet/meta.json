@@ -17,6 +17,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/RegexCheatSheet.pm",
-      "t/RegexCheatSheet.t"
+      "t/RegexCheatSheet.t",
+      "share/goodie/regex_cheat_sheet/style.css"
    ]
 }

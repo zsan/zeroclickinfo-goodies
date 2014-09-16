@@ -17,6 +17,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/UnicodeFuzzySearch.pm",
-      "t/UnicodeFuzzySearch.t"
+      "t/UnicodeFuzzySearch.t",
+      "share/goodie/unicode_fuzzy_search/UnicodeData.txt"
    ]
 }

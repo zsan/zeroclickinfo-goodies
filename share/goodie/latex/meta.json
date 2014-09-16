@@ -16,6 +16,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/Latex.pm",
-      "t/Latex.t"
+      "t/Latex.t",
+      "share/goodie/latex/style.css"
    ]
 }

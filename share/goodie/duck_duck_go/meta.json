@@ -18,6 +18,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/DuckDuckGo.pm",
-      "t/DuckDuckGo.t"
+      "t/DuckDuckGo.t",
+      "share/goodie/duck_duck_go/responses.yml"
    ]
 }

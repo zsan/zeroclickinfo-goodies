@@ -14,6 +14,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/ZappBrannigan.pm",
-      "t/ZappBrannigan.t"
+      "t/ZappBrannigan.t",
+      "share/goodie/zapp_brannigan/quotes.txt"
    ]
 }

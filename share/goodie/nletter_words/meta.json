@@ -17,6 +17,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/NLetterWords.pm",
-      "t/NLetterWords.t"
+      "t/NLetterWords.t",
+      "share/goodie/nletter_words/words.txt"
    ]
 }

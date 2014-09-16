@@ -17,6 +17,9 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/PrivateNetwork.pm",
-      "t/PrivateNetwork.t"
+      "t/PrivateNetwork.t",
+      "share/goodie/private_network/private_network.html",
+      "share/goodie/private_network/private_network.txt",
+      "share/goodie/private_network/style.css"
    ]
 }

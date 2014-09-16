@@ -19,6 +19,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/Coin.pm",
-      "t/Coin.t"
+      "t/Coin.t",
+      "share/goodie/coin/style.css"
    ]
 }

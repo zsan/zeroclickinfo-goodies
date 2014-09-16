@@ -14,6 +14,8 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/PublicDNS.pm",
-      "t/PublicDNS.t"
+      "t/PublicDNS.t",
+      "share/goodie/public_dns/providers.yml",
+      "share/goodie/public_dns/style.css"
    ]
 }

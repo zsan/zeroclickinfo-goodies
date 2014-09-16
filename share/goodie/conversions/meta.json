@@ -19,6 +19,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/Conversions.pm",
-      "t/Conversions.t"
+      "t/Conversions.t",
+      "share/goodie/conversions/style.css"
    ]
 }

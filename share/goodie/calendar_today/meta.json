@@ -22,6 +22,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/CalendarToday.pm",
-      "t/CalendarToday.t"
+      "t/CalendarToday.t",
+      "share/goodie/calendar_today/style.css"
    ]
 }

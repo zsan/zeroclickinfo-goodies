@@ -17,6 +17,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/Calculator.pm",
-      "t/Calculator.t"
+      "t/Calculator.t",
+      "share/goodie/calculator/style.css"
    ]
 }

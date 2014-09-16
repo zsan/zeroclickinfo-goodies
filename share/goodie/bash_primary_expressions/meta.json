@@ -17,6 +17,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/BashPrimaryExpressions.pm",
-      "t/BashPrimaryExpressions.t"
+      "t/BashPrimaryExpressions.t",
+      "share/goodie/bash_primary_expressions/style.css"
    ]
 }

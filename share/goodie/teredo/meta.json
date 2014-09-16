@@ -14,6 +14,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/Teredo.pm",
-      "t/Teredo.t"
+      "t/Teredo.t",
+      "share/goodie/teredo/style.css"
    ]
 }

@@ -17,6 +17,11 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/CurrencyIn.pm",
-      "t/CurrencyIn.t"
+      "t/CurrencyIn.t",
+      "share/goodie/currency_in/README.txt",
+      "share/goodie/currency_in/currency.txt",
+      "share/goodie/currency_in/fetch.sh",
+      "share/goodie/currency_in/parse.py",
+      "share/goodie/currency_in/parse.sh"
    ]
 }

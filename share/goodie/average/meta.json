@@ -18,6 +18,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/Average.pm",
-      "t/Average.t"
+      "t/Average.t",
+      "share/goodie/average/style.css"
    ]
 }

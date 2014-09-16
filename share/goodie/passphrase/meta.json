@@ -18,6 +18,7 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/Passphrase.pm",
-      "t/Passphrase.t"
+      "t/Passphrase.t",
+      "share/goodie/passphrase/words.txt"
    ]
 }

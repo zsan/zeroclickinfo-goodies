@@ -17,6 +17,9 @@
    "dev_milestone" : "live",
    "code" : [
       "lib/DDG/Goodie/Anagram.pm",
-      "t/Anagram.t"
+      "t/Anagram.t",
+      "share/goodie/anagram/prune_words.pl",
+      "share/goodie/anagram/style.css",
+      "share/goodie/anagram/words"
    ]
 }
