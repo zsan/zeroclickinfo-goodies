@@ -40,7 +40,7 @@ my %bad_words = map { $_ => 1 } (qw(download server tutorial mod mods skins skin
 sub make_html {
     my ($recipe) = @_;
     my $html = '';
-    my $uri = 'https://duckduckgo.com/iu/?u=' . encodeURIComponent($recipe->{'image'});
+    my $uri = '/iu/?u=' . encodeURIComponent($recipe->{'image'});
 
     $html = '<div id="minecraft-wrapper">';
     $html .= '<h3>' . $recipe->{'name'} . '</h3>';
