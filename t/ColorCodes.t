@@ -48,6 +48,10 @@ ddg_goodie_test([qw(
         'Hex: #202428 ~ rgb(32, 36, 40) ~ rgb(13%, 14%, 16%) ~ hsl(210, 11%, 14%) ~ cmyb(20%, 10%, 0%, 84%)',
         html => qr/background:#202428/,
     ),
+    'rgba(99,60,176,0.5)' => test_zci(
+        'Hex: #633cb0 ~ rgb(99, 60, 176) ~ rgb(39%, 24%, 69%)',
+        html => qr/background:#633cb0/,
+    ),
     # Single full HTML check.
     'red html code' => test_zci(
         'Hex: #ff0000 ~ rgb(255, 0, 0) ~ rgb(100%, 0%, 0%) ~ hsl(0, 100%, 50%) ~ cmyb(0%, 100%, 100%, 0%)',
