@@ -36,7 +36,13 @@ handle remainder => sub {
     return unless $zodiacdate;
 
     #Return the Star Sign
-    return "Star Sign for ".date_output_string($zodiacdate).": ".ucfirst(zodiac_date_name($zodiacdate));
+    
+    return "Star Sign for ".date_output_string($zodiacdate).": ".ucfirst(zodiac_date_name($zodiacdate)),
+        structured_answer => {
+            input => [html_enc($datestring)],
+            operation => "Zodiac Sign",
+            result => html_enc(ucfirst(zodiac_date_name($zodiacdate))),
+        }
 };
 
 1;
