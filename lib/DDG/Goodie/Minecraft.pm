@@ -43,10 +43,10 @@ sub make_html {
     my $uri = '/iu/?u=' . encodeURIComponent($recipe->{'image'});
 
     $html = '<div id="minecraft-wrapper">';
-    $html .= '<h3>' . $recipe->{'name'} . '</h3>';
-    $html .= '<span>' . $recipe->{'description'} . '</span>';
+    $html .= '<h3 class="zci__header">' . $recipe->{'name'} . '</h3>';
+    $html .= '<span class="zci__content">' . $recipe->{'description'} . '</span>';
     $html .= '<img src="' . $uri . '" style="display: block; margin: 0.5em 0;" />';
-    $html .= '<span>Ingredients: ' . $recipe->{'ingredients'} . '</span>';
+    $html .= '<span class="zci__content">Ingredients: ' . $recipe->{'ingredients'} . '</span>';
     $html .= '</div>';
 
     return $html;
